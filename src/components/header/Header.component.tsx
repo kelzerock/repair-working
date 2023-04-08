@@ -31,7 +31,6 @@ const Header = () => {
             ))}
           </div>
           <Button className="btn-yellow" text="Перезвоните мне"/>
-          <button>Перезвоните мне</button>
         </div>
         <nav>
           <ul>
