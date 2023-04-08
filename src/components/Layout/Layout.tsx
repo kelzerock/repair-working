@@ -1,6 +1,7 @@
+import { AppProps } from "next/app";
 import Header from "../header/Header.component"
 
-const Layout = ({ children }) => {
+const Layout = ({ children }:any) => {
   return (
     <>
       <Header />
