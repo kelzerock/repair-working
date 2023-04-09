@@ -1,0 +1,13 @@
+.btn-yellow {
+  position: relative;
+  background: #f99e15;
+  color: #fff;
+  padding: 8px 24px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgb(249 157 21 / 30%);
+  border-radius: 32px;
+  transition: box-shadow 0.3s, background .3s;
+}
