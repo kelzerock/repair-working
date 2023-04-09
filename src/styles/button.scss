@@ -1,13 +1,27 @@
 .btn-yellow {
+  margin: 5px 10px;
   position: relative;
   background: #f99e15;
   color: #fff;
   padding: 8px 24px;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 1rem;
   line-height: 1.5rem;
   overflow: hidden;
   box-shadow: 0 4px 12px rgb(249 157 21 / 30%);
   border-radius: 32px;
-  transition: box-shadow 0.3s, background .3s;
+  border: none;
+  // transition: background .3s;
+
+  &:hover {
+    background: linear-gradient(90deg, #f96715 0%, #f98315 51.56%, #f96715 100%);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .btn-yellow {
+    margin: 2px 5px;
+    font-size: .7rem;
+  }
 }

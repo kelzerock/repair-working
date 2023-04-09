@@ -1,0 +1,1 @@
+export const phoneNumber:number[] = [80291111111, 80291111111];
