@@ -1,0 +1,72 @@
+@import '../../../styles/variables.scss';
+
+.logo {
+  position: absolute;
+  // position: relative;
+  left: 10px;
+  top: 10px;
+  width: 150px;
+
+
+  a {
+    text-decoration: none;
+    color: $main-blue;
+
+    h2 {
+      margin: 3px 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: .5rem;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    width: 130px;
+
+    a {
+      p {
+        display: none;
+      }
+
+      img {
+        right: 0px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .logo {
+    left: calc(50% - 150px / 2);
+    width: 150px;
+  
+      a {
+  
+      h2 {
+
+      }
+  
+      p {
+        margin: 0;
+        font-size: .5rem;
+      }
+  
+      img {
+        position: absolute;
+        top: 0;
+        right: 20px;
+      }
+    }
+  }
+}
