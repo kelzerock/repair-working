@@ -28,12 +28,9 @@
         width: 100%;
         .service_name {
             cursor: pointer;
-            display: flex;
-            justify-content: space-between;
         }
         .service_ul {
-            padding: 0 10px;
-            width: calc(100% - 20px);
+            width: 100%;
             border-bottom: 1px rgba(255,255,255,0.2) solid;;
         }
     }
