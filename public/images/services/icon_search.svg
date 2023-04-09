@@ -1,6 +1,0 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="info-about__item-icon" width="24"  height="24" ><defs><symbol viewBox="0 0 24 24" fill="none" id="icon_search">
-  <circle cx="15" cy="9" r="8.5" stroke="#51B2C0"></circle>
-  <path d="M3 22.5L9.75 15.75" stroke="#51B2C0" stroke-linecap="round" stroke-linejoin="round"></path>
-</symbol></defs>
-            <use xlink:href="#icon_search" fill="#51B2C0"></use>
-        </svg>
