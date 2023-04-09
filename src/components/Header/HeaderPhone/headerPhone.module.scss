@@ -1,0 +1,62 @@
+@import '../../../styles/variables.scss';
+
+.header_phone {
+  display: flex;
+  align-items: center;
+
+  a {
+    font-size: .9rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: $main-black;
+    margin: 0 10px;
+    text-decoration: underline;
+    text-decoration-color: $main-blue;
+    text-decoration-style: dashed;
+    transition: color .3s;
+
+    &:hover {
+      color: $main-blue;
+      text-decoration: none;
+    }
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1260px) {
+  .header_phone {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    flex-direction: column;
+    row-gap: 10px;
+
+    a {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .header_phone {
+    display: flex;
+    align-items: flex-start;
+    order: -1;
+    flex: 1 1 100%;
+
+    a {
+      display: none;
+
+
+      &:last-child {
+        display: inherit;
+      }
+    }
+
+  }
+
+}
