@@ -1,4 +1,7 @@
+import Link from "next/link";
 import { useState } from "react";
+import Nav, { linkArr } from "../Nav.component";
+import style from './burger.module.scss'
 
 const Burger = () => {
   const [burger_class, setBurgerClass] = useState("burger_bar unclicked");
@@ -14,8 +17,8 @@ const Burger = () => {
       setMenuClass("menu hidden");
     }
     setIsMenuClicked(!isMenuClicked);
+    console.log("burger bar", burger_class);
   };
-  console.log("burger bar", burger_class);
 
   return (
     <>
@@ -26,7 +29,15 @@ const Burger = () => {
       </div>
 
       <div className={menu_class}>
-        
+        <nav className={style.nav_burger}>
+          <ul>
+            {linkArr.map((el, index) => (
+              <li key={index}>
+                <Link href={el.link} onClick={updateMenu}>{el.namePage}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
     </>
   );
