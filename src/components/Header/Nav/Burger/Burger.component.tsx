@@ -7,14 +7,17 @@ const Burger = () => {
   const [burger_class, setBurgerClass] = useState("burger_bar unclicked");
   const [menu_class, setMenuClass] = useState("menu hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
+  const [nav_burger, setNavBurger] = useState('nav_burger hidden')
 
   const updateMenu = () => {
     if (!isMenuClicked) {
       setBurgerClass("burger_bar clicked");
       setMenuClass("menu visible");
+      setNavBurger("nav_burger visible")
     } else {
       setBurgerClass("burger_bar unclicked");
       setMenuClass("menu hidden");
+      setNavBurger("nav_burger hidden")
     }
     setIsMenuClicked(!isMenuClicked);
     console.log("burger bar", burger_class);
@@ -29,7 +32,7 @@ const Burger = () => {
       </div>
 
       <div className={menu_class}>
-        <nav className={style.nav_burger}>
+        <nav className={nav_burger}>
           <ul>
             {linkArr.map((el, index) => (
               <li key={index}>
