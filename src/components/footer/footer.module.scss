@@ -1,0 +1,93 @@
+@import "../../styles/variables.scss";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $main-blue;
+    color: $main-white;
+    a {
+        text-decoration: none;
+        color: $main-white;
+    }
+    p {
+        cursor: default;
+    }
+    .icon {
+        filter: invert(100%) sepia(18%) saturate(2765%) hue-rotate(179deg) brightness(103%) contrast(95%);
+    }
+    .firstblock {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        .social {
+            width: 30%;
+            display: flex;
+            justify-content: end;
+            ul {
+                display: flex;
+                gap: 10px;
+                list-style: none;
+                flex-direction: row;
+            }
+        }
+        .contacts {
+            width: 60%;
+            display: flex;
+            gap: 10px;
+            .contacts_container {
+                width: 25%;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                .phones {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    .secondblock {
+        display: flex;
+        border-top: 1px rgba(255,255,255,0.2) solid;
+        .customer {
+            width: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: $display-laptop) {
+    .footer {
+        .firstblock {
+            flex-direction: column;
+            align-items: center;
+            .social {
+                width: 100%;
+                justify-content: center;
+            }
+            .contacts {
+                width: 100%;
+            }
+        }
+        .secondblock {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            .customer {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $display-mobile) {
+    .footer {
+        .firstblock {
+            .contacts {
+                flex-direction: column;
+                .contacts_container {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
