@@ -1,0 +1,37 @@
+@import "../../../styles/variables.scss";
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+
+    .service_ul {
+        list-style: none;
+        margin: 0;
+        width: 25%;
+    }
+}
+.service_mobile {
+    display: none;
+}
+
+@media screen and (max-width: $display-laptop) {
+    .service_mobile {
+        display: flex;
+    }
+    .service_desktop {
+        display: none;
+    }
+    .service {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        .service_name {
+            cursor: pointer;
+        }
+        .service_ul {
+            width: 100%;
+            border-bottom: 1px rgba(255,255,255,0.2) solid;;
+        }
+    }
+}

@@ -12,6 +12,9 @@
     p {
         cursor: default;
     }
+    .icon {
+        filter: invert(100%) sepia(18%) saturate(2765%) hue-rotate(179deg) brightness(103%) contrast(95%);
+    }
     .firstblock {
         display: flex;
         justify-content: space-between;
@@ -33,24 +36,57 @@
             gap: 10px;
             .contacts_container {
                 width: 25%;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                .phones {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
     }
     .secondblock {
         display: flex;
+        border-top: 1px rgba(255,255,255,0.2) solid;
         .customer {
-            width: 20%;
+            width: 25%;
         }
-        .service {
-            display: flex;
-            .service_name {
-                
-            }
-            .service_ul {
-                list-style: none;
-            }
-            .service_li {
+    }
+}
 
+@media screen and (max-width: $display-laptop) {
+    .footer {
+        .firstblock {
+            flex-direction: column;
+            align-items: center;
+            .social {
+                width: 100%;
+                justify-content: center;
+            }
+            .contacts {
+                width: 100%;
+            }
+        }
+        .secondblock {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            .customer {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $display-mobile) {
+    .footer {
+        .firstblock {
+            .contacts {
+                flex-direction: column;
+                .contacts_container {
+                    width: 100%;
+                }
             }
         }
     }

@@ -11,18 +11,22 @@
     "social": [
         {
             "name": "instagram",
+            "image": "/images/black-instagram-icon.svg",
             "link": "#"
         },
         {
             "name": "youtube",
+            "image": "/images/youtube-round-line-icon.svg",
             "link": "#"
         },
         {
             "name": "facebook",
+            "image": "images/facebook-round-icon.svg",
             "link": "#"
         },
         {
             "name": "vk",
+            "image": "/images/vk-round-line-icon.svg",
             "link": "#"
         }
     ],
