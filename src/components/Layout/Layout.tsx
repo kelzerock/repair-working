@@ -1,12 +1,14 @@
-import { AppProps } from "next/app";
-import Header from "../header/Header.component";
+import Header from '../Header/Header.component';
 import { Footer } from '../footer';
+import style from './layout.module.scss'
 
 const Layout = ({ children }:any) => {
   return (
     <>
       <Header />
-      <div>{children}</div>
+      <div className={style.layout_main}>
+        {children}
+      </div>
       <Footer />
     </>
   );

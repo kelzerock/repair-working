@@ -1,0 +1,119 @@
+{
+    "services": [
+        {
+            "name": "Ремонт",
+            "list": [
+                {
+                    "name": "Холодильники",
+                    "image": "images/services/icon_fridge.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "Стиральные машины",
+                    "image": "images/services/icon_washer.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "Посудомоечные машины",
+                    "image": "images/services/icon_dishwasher.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "Телевизоры",
+                    "image": "images/services/icon_tv.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "Кондиционеры",
+                    "image": "images/services/icon_condition.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "Варочные панели",
+                    "image": "images/services/icon_cook.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "Электроплиты",
+                    "image": "images/services/icon_electric_cook.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "Духовые шкафы",
+                    "image": "images/services/icon_cooker.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "Морозильные камеры",
+                    "image": "images/services/icon_fridge_box.svg",
+                    "link": "#"
+                },
+                {
+                    "name": "Сушильные машины",
+                    "image": "images/services/icon_dry_machine.svg",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "Установка",
+            "list": [
+                {
+                    "name": "Стиральные машины",
+                    "image": "",
+                    "link": "#"
+                },
+                {
+                    "name": "Посудомоечные машины",
+                    "image": "",
+                    "link": "#"
+                },
+                {
+                    "name": "Кондиционеры",
+                    "image": "",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "Информация",
+            "list": [
+                {
+                    "name": "Цены",
+                    "image": "",
+                    "link": "#"
+                },
+                {
+                    "name": "Вопрос-ответ",
+                    "image": "",
+                    "link": "#"
+                },
+                {
+                    "name": "География",
+                    "image": "",
+                    "link": "#"
+                },
+                {
+                    "name": "Отзывы",
+                    "image": "",
+                    "link": "#"
+                },
+                {
+                    "name": "Гарантийный случай",
+                    "image": "",
+                    "link": "#"
+                },
+                {
+                    "name": "Мастера",
+                    "image": "",
+                    "link": "#"
+                },
+                {
+                    "name": "Контакты",
+                    "image": "",
+                    "link": "#"
+                }
+            ]
+        }
+    ]
+}
