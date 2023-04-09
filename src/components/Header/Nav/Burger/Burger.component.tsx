@@ -37,8 +37,8 @@ const Burger = () => {
               if (el.subelements) {
                 return (
                   <li key={index}>
-                    <Link href={el.link} className="sub_nav">
-                      {el.namePage}
+                    <div className="sub_nav">
+                       <span>{el.namePage}</span>
                       <ul>
                         {el.subelements.map((elem, ind) => (
                           <li key={ind}>
@@ -52,7 +52,7 @@ const Burger = () => {
                           </li>
                         ))}
                       </ul>
-                    </Link>
+                    </div>
                   </li>
                 );
               } else {

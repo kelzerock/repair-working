@@ -15,16 +15,22 @@
         text-decoration: none;
         color: $main-blue;
         font-weight: 500;
-        // font-size: .8rem;
         transition: color .3s;
-
-        &.header_sub_link {
-          pointer-events: none;
-        }
 
         &:hover {
           color: $main-black;
           border-bottom: solid $main-black 2px;
+        }
+      }
+
+      .header_sub_link {
+
+        span {
+          pointer-events: none;
+          text-decoration: none;
+          color: $main-blue;
+          font-weight: 500;
+          transition: color .3s;
         }
 
         .addiction_nav {
@@ -47,21 +53,22 @@
             row-gap: 5px;
             padding: 3px;
 
-            li, a {
+            li,
+            a {
               font-size: .9rem;
               color: $main-white;
             }
           }
         }
-
       }
+
     }
   }
 }
 
 @media screen and (max-width: 1260px) {
   .nav {
-   display: none;
+    display: none;
   }
 }
 

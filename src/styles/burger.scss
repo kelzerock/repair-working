@@ -47,10 +47,29 @@
         &:hover {
           color: $main-black;
         }
+      }
+
+      .sub_nav {
+        span {
+          text-align: left;
+          padding-left: 30px;
+          text-decoration: none;
+          color: $main-white;
+          font-size: 2rem;
+          font-weight: 500;
+          transition: color .3s;
+          height: 100%;
+          width: 100%;
+  
+          &:hover {
+            color: $main-black;
+            cursor: pointer;
+          }
+        }
 
         &.sub_nav ul {
           display: none;
-
+  
           a {
             text-decoration: none;
             color: $main-white;
@@ -61,10 +80,10 @@
             width: 100%;
           }
         }
-
+  
         &.sub_nav:hover ul {
           display: flex;
-
+  
           a {
             text-decoration: none;
             color: $main-white;
@@ -73,13 +92,14 @@
             transition: color .3s;
             height: 100%;
             width: 80%;
-
+  
             &:hover {
               color: $main-black;
             }
           }
         }
       }
+
     }
   }
 }
