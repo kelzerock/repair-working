@@ -1,26 +1,25 @@
+import { linkArr } from "@/constant/header-constant";
 import Link from "next/link";
 import { useState } from "react";
-import Nav, { linkArr } from "../Nav.component";
-import style from './burger.module.scss'
+
 
 const Burger = () => {
   const [burger_class, setBurgerClass] = useState("burger_bar unclicked");
   const [menu_class, setMenuClass] = useState("menu hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
-  const [nav_burger, setNavBurger] = useState('nav_burger hidden')
+  const [nav_burger, setNavBurger] = useState("nav_burger hidden");
 
   const updateMenu = () => {
     if (!isMenuClicked) {
       setBurgerClass("burger_bar clicked");
       setMenuClass("menu visible");
-      setNavBurger("nav_burger visible")
+      setNavBurger("nav_burger visible");
     } else {
       setBurgerClass("burger_bar unclicked");
       setMenuClass("menu hidden");
-      setNavBurger("nav_burger hidden")
+      setNavBurger("nav_burger hidden");
     }
     setIsMenuClicked(!isMenuClicked);
-    console.log("burger bar", burger_class);
   };
 
   return (
@@ -34,11 +33,38 @@ const Burger = () => {
       <div className={menu_class}>
         <nav className={nav_burger}>
           <ul>
-            {linkArr.map((el, index) => (
-              <li key={index}>
-                <Link href={el.link} onClick={updateMenu}>{el.namePage}</Link>
-              </li>
-            ))}
+            {linkArr.map((el, index) => {
+              if (el.subelements) {
+                return (
+                  <li key={index}>
+                    <Link href={el.link} className="sub_nav">
+                      {el.namePage}
+                      <ul>
+                        {el.subelements.map((elem, ind) => (
+                          <li key={ind}>
+                            <Link
+                              href={el.link + elem.path}
+                              className="header_link"
+                              onClick={updateMenu}
+                            >
+                              {elem.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </Link>
+                  </li>
+                );
+              } else {
+                return (
+                  <li key={index}>
+                    <Link href={el.link} onClick={updateMenu}>
+                      {el.namePage}
+                    </Link>
+                  </li>
+                );
+              }
+            })}
           </ul>
         </nav>
       </div>
