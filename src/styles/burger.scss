@@ -148,13 +148,13 @@
 
 
   .menu {
-    width: 100%;
+    width: calc(100% + 42px);
     height: 100vh;
     background: rgb(34, 117, 195);
     background: linear-gradient(0deg, rgba(34, 117, 195, 1) 0%, rgba(45, 138, 253, 1) 100%);
     position: absolute;
     top: 0;
-    left: 0;
+    left: -21px;
     z-index: 4;
 
     &.hidden {
