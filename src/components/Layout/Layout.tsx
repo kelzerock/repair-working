@@ -7,7 +7,9 @@ const Layout = ({ children }:any) => {
     <>
       <Header />
       <div className={style.layout_main}>
+        <div className='container'>
         {children}
+        </div>
       </div>
       <Footer />
     </>
