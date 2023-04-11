@@ -1,0 +1,74 @@
+@import '../../../styles/variables.scss';
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+
+  .list_header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .title {
+    font-size: 1.625rem;
+    line-height: 2.125rem;
+    font-weight: 600;
+  }
+
+  .list_ul {
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-out;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    border: 0.1px $main-lblue solid;
+    background: $main-white;
+    border-radius: 0 32px 0 32px;
+
+    .list_li {
+      box-sizing: border-box;
+      display: flex;
+      column-gap: 20px;
+      position: relative;
+      padding: 0 10px;
+      text-align: left;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .main_info {
+        flex: 1 1 50%;
+      }
+
+      .main_price,
+      .main_time,
+      .main_guaranty {
+        flex: 1 1 16%
+      }
+    }
+
+  }
+
+  .list_hidden {
+    max-height: 0;
+    transition: all 0.4s ease-out;
+  }
+}
+
+
+@media screen and (max-width: $display-laptop) {
+}
+
+@media screen and (max-width: $display-mobile) {}

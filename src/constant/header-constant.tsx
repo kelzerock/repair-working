@@ -27,14 +27,14 @@ export const linkArr: LinkArr[] = [
     subelements: [
       { name: "Стиральные машины", path: "/washer" },
       { name: "Посудомоечные машины", path: "/dishwasher" },
-      { name: "Кондиционеры", path: "/conditioner" },
+      // { name: "Кондиционеры", path: "/conditioner" },
     ],
   },
   { link: "/price", namePage: "Цены" },
-  { link: "/blog", namePage: "Блог" },
+  // { link: "/blog", namePage: "Блог" },
   { link: "/faq", namePage: "Вопрос-ответ" },
-  { link: "/geography", namePage: "География" },
+  // { link: "/geography", namePage: "География" },
   { link: "/reviews", namePage: "Отзывы" },
-  { link: "/masters", namePage: "Мастера" },
+  // { link: "/masters", namePage: "Мастера" },
   { link: "/contacts", namePage: "Контакты" },
 ];
