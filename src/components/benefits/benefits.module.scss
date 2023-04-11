@@ -2,17 +2,27 @@
 
 .section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
+    .list_header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
     .title {
         font-size: 1.625rem;
         line-height: 2.125rem;
         font-weight: 600;
     }
     .list_ul {
+        cursor: default;
         display: flex;
+        max-height: 2500px;
+        transition: all 2s ease-out;
+        overflow: hidden;
         margin: 0 auto;
         width: 100%;
         padding: 0;
@@ -38,5 +48,9 @@
                 color: #898686;
             }
         }
+    }
+    .list_hidden {
+        max-height: 0;
+        transition: all 0.4s ease-out;
     }
 }
