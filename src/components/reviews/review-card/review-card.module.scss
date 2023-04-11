@@ -1,0 +1,50 @@
+@import '../../../styles/variables.scss';
+
+.wrapper {
+    flex: 0 0 auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 4);
+    height: 100px;
+    overflow-wrap: break-word;
+    .score {
+        display: flex;
+        gap: 5px;
+    }
+    .title {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: $main-blue;
+    }
+    .desc {
+        height: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-height: 1.2em;
+        max-height: 3.6em;
+      }
+    .row {
+        .author {
+            color: $main-gray;
+            font-size: .875rem;
+            line-height: 1.375rem;
+        }
+    }
+}
+
+@media screen and (max-width: $display-laptop) {
+    .wrapper {
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: $display-mobile) {
+    .wrapper {
+        width: calc(100%);
+    }
+}

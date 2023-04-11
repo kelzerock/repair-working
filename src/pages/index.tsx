@@ -5,6 +5,7 @@ import textInfo from '../constants/json/main-page-first-section.json';
 import iconArrowRight from '../../public/images/services/icon_arrow_right.svg';
 import textServices from '../constants/json/services.json';
 import { Benefits } from '@/components/benefits';
+import { Reviews } from '@/components/reviews';
 
 const MainPage = () => {
 	return (
@@ -25,6 +26,7 @@ const MainPage = () => {
 				</div>
 			</div>
 			<Benefits />
+			<Reviews />
 		</div>
 	)
 };
