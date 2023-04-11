@@ -6,6 +6,7 @@ import iconArrowRight from '../../public/images/services/icon_arrow_right.svg';
 import textServices from '../constants/json/services.json';
 import { Benefits } from '@/components/benefits';
 import { Reviews } from '@/components/reviews';
+import { Workflow } from '@/components/workflow';
 
 const MainPage = () => {
 	return (
@@ -27,6 +28,7 @@ const MainPage = () => {
 			</div>
 			<Benefits />
 			<Reviews />
+			<Workflow />
 		</div>
 	)
 };
