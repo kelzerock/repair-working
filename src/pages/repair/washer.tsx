@@ -5,6 +5,7 @@ import RepairPrice from "@/components/Repair-block/Repair-price/RepairPrice.comp
 import RepairTitle from "@/components/Repair-block/Repair-title/Repair-title.component";
 import textData from "@/constants/json/repaire.json";
 import textDataPrice from "@/constants/json/repaire-price.json";
+import { Reviews } from "@/components/reviews";
 
 const WasherPage = () => {
   return (
@@ -14,6 +15,7 @@ const WasherPage = () => {
       <RepairCalculating />
       <RepairInfo />
       <RepairPrice data={textDataPrice.washer.data}/>
+      <Reviews />
     </>
   );
 };
