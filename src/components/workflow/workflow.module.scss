@@ -20,7 +20,7 @@
     .list_ul {
         cursor: default;
         display: flex;
-        max-height: 1300px;
+        max-height: 800px;
         transition: all 0.4s ease-out;
         overflow: hidden;
         margin: 0 auto;
@@ -35,12 +35,12 @@
         .list_li {
             box-sizing: border-box;
             display: flex;
-            border: 0.1px $main-lblue solid;
+            position: relative;
             flex-direction: column;
             padding: 32px;
             text-align: center;
             align-items: center;
-            width: calc(100% / 3);
+            width: calc(100% / 4);
             .img {
                 justify-self: center;
             }
@@ -48,19 +48,24 @@
                 font-weight: 600;
                 padding: 0;
             }
-            .list_desc {
-                margin-top: 4px;
-                color: #898686;
-            }
         }
-        .list_li + .list_li {
-            border-left: 0;
-            border-bottom: 0;
+        .list_li::after {
+            content: "";
+            background-image: url('../../../public/images/workflow/icon_arrow_right_black.svg');
+            position: absolute;
+            right: 0;
+            transform: translateY(100%);
+            display: block;
+            width: 36px;
+            height: 24px;
+            background-repeat: no-repeat;
+            background-position: center right;
         }
-        .list_li:nth-child(1) {
-            border-bottom: 0;
-            border-left: 0;
+        .list_li:last-child::after {
+            content: '';
+            background: none;
         }
+
     }
     .list_hidden {
         max-height: 0;
@@ -72,7 +77,8 @@
     .section {
         .list_ul {
             .list_li {
-                width: calc(100% / 2);
+                font-size: .875rem;
+                line-height: 1.375rem;
             }
         }
     }
@@ -87,6 +93,17 @@
                 width: calc(100%);
                 text-align: left;
                 column-gap: 20px;
+            }
+            .list_li::after {
+                transform: rotate(90deg);
+                left: 60px;
+                bottom: 5px;
+                width: 18px;
+                height: 12px;
+            }
+            .list_li:last-child::after {
+                content: '';
+                background: none;
             }
             .img {
                 grid-row-start: 1;

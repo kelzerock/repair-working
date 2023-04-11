@@ -1,11 +1,11 @@
 import classNames from 'classnames';
 import { useState } from 'react';
 import Image from 'next/image';
-import style from './benefits.module.scss';
+import style from './workflow.module.scss';
 import iconSpoiler from '../../../public/images/services/icon_spoiler_blue.svg';
-import textBenefits from '../../constants/json/benefits.json';
+import textWorkflow from '../../constants/json/workflow.json';
 
-export const Benefits = () => {
+export const Workflow = () => {
     const [isShowing, setIsShowing] = useState(false);
 
     return (
@@ -15,17 +15,16 @@ export const Benefits = () => {
                 onClick={() => setIsShowing(!isShowing)}
                 role='presentation'
             >
-                <h2 className={style.title}>Преимущества для Вас</h2>
+                <h2 className={style.title}>Схема работы</h2>
                 <span><Image src={iconSpoiler} alt='spoiler' className={classNames({'rotate': !isShowing})}/></span>
             </div>
             <ul
                 className={classNames(style.list_ul, {[style.list_hidden] : isShowing})}
             >
-                {textBenefits.map((el, ind) => (
+                {textWorkflow.map((el, ind) => (
                     <li key={`benefits-${ind}`} className={style.list_li}>
-                        <Image src={el.image} alt={el.title} width={74} height={70} className={style.img} />
-                        <h4 className={style.list_title}>{el.title}</h4>
-                        <p className={style.list_desc}>{el.desc}</p>
+                        <Image src={el.image} alt={el.image} width={74} height={70} className={style.img} />
+                        <h4 className={style.list_title}>{el.text}</h4>
                     </li>
                 ))}
             </ul>

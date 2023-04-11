@@ -1,0 +1,18 @@
+[
+    {
+        "image": "/images/workflow/icon_workflow_step1.svg",
+        "text": "Вы оставляете заявку на ремонт"
+    },
+    {
+        "image": "/images/workflow/icon_workflow_step2.svg",
+        "text": "Мастер перезванивает и согласовывает время визита"
+    },
+    {
+        "image": "/images/workflow/icon_workflow_step3.svg",
+        "text": "Мастер приезжает, проводит диагностику и сообщает цену ремонта"
+    },
+    {
+        "image": "/images/workflow/icon_workflow_step4.svg",
+        "text": "Мастер чинит поломку и даёт письменную гарантию от 6 мес. до 2 лет"
+    }
+]
