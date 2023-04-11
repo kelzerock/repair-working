@@ -2,31 +2,31 @@
     {
         "title": "Выезд мастера и диагностика в подарок",
         "desc": "при согласии на ремонт",
-        "image": "images/benefits/icon_benefits_master.svg"
+        "image": "/images/benefits/icon_benefits_master.svg"
     },
     {
         "title": "Гарантия до 2 лет на работу и запчасти",
         "desc": "",
-        "image": "images/benefits/icon_benefits_warranty.svg"
+        "image": "/images/benefits/icon_benefits_warranty.svg"
     },
     {
         "title": "Ремонт в течение суток после вызова",
         "desc": "",
-        "image": "images/benefits/icon_benefits_fast.svg"
+        "image": "/images/benefits/icon_benefits_fast.svg"
     },
     {
         "title": "Оригинальные запчасти,",
         "desc": "сертифицированные производителями",
-        "image": "images/benefits/icon_benefits_original_parts.svg"
+        "image": "/images/benefits/icon_benefits_original_parts.svg"
     },
     {
         "title": "Мастера с опытом от 5 лет",
         "desc": "Берем в штат только опытных мастеров с профильным образованием",
-        "image": "images/benefits/icon_benefits_quality.svg"
+        "image": "/images/benefits/icon_benefits_quality.svg"
     },
     {
         "title": "Крупнейший сервис в Москве и Московской области",
         "desc": "С 2003 г. ремонтируем бытовую технику",
-        "image": "images/benefits/icon_benefits_bigger.svg"
+        "image": "/images/benefits/icon_benefits_bigger.svg"
     }
 ]
