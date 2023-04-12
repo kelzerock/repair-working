@@ -29,14 +29,63 @@
     color: #2364af;
     cursor: pointer;
 
+
     span {
       margin: 0 auto 0 10px;
     }
   }
 
+  .section__btn.action {
+    background-color: lightblue;
+  }
+
   .section__btn:hover {
     color: #003674;
     box-shadow: 0 8px 24px rgba(35, 100, 175, 0.4);
+  }
+
+  .price_list {
+    .list_ul {
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.4s ease-out;
+      overflow: hidden;
+      margin: 0 auto;
+      width: 100%;
+      padding: 10px 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      border: 0.1px $main-lblue solid;
+      background: $main-white;
+      border-radius: 0 32px 0 32px;
+
+      .list_li {
+        box-sizing: border-box;
+        display: flex;
+        column-gap: 20px;
+        position: relative;
+        padding: 0 10px;
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 10px 0;
+
+        .main_info {
+          flex: 1 1 50%;
+          margin: 0;
+        }
+
+        .main_price,
+        .main_time,
+        .main_guaranty {
+          flex: 1 1 16%;
+          margin: 0;
+        }
+      }
+    }
   }
 }
 
@@ -44,6 +93,37 @@
   .container_price {
     .section__btn {
       width: calc(50% - 32px);
+    }
+
+    .price_list {
+      .list_ul {
+        font-size: 1rem;
+        margin: 10px 0;
+
+        .list_li {
+          column-gap: 5px;
+          padding: 0 5px;
+          flex-wrap: wrap;
+          margin: 5px 0;
+          .main_info {
+            flex: 1 1 60%;
+          }
+
+          .main_time {
+            display: none;
+          }
+
+          .main_price {
+            flex: 1 1 30%;
+          }
+
+
+          .main_guaranty {
+            flex: 1 1 50%;  
+            color: gray;
+          }
+        }
+      }
     }
   }
 }
@@ -67,5 +147,37 @@
         }
       }
     }
+
+    .price_list {
+      .list_ul {
+        font-size: .8rem;
+        margin: px 0;
+
+        .list_li {
+          column-gap: 5px;
+          padding: 0 5px;
+          flex-wrap: wrap;
+          margin: 5px 0;
+          .main_info {
+            flex: 1 1 60%;
+          }
+
+          .main_time {
+            display: none;
+          }
+
+          .main_price {
+            flex: 1 1 30%;
+          }
+
+
+          .main_guaranty {
+            flex: 1 1 50%;  
+            color: gray;
+          }
+        }
+      }
+    }
   }
+
 }

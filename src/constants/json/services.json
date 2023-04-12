@@ -13,13 +13,13 @@
                     "name": "Стиральные машины",
                     "image": "images/services/icon_washer.svg",
                     "link": "#",
-                    "filterName": ""
+                    "filterName": "washer"
                 },
                 {
                     "name": "Посудомоечные машины",
                     "image": "images/services/icon_dishwasher.svg",
                     "link": "#",
-                    "filterName": ""
+                    "filterName": "dishwasher"
                 },
                 {
                     "name": "Телевизоры",
@@ -37,19 +37,19 @@
                     "name": "Варочные панели",
                     "image": "images/services/icon_cook.svg",
                     "link": "#",
-                    "filterName": ""
+                    "filterName": "hob"
                 },
                 {
                     "name": "Электроплиты",
                     "image": "images/services/icon_electric_cook.svg",
                     "link": "#",
-                    "filterName": ""
+                    "filterName": "stove"
                 },
                 {
                     "name": "Духовые шкафы",
                     "image": "images/services/icon_cooker.svg",
                     "link": "#",
-                    "filterName": ""
+                    "filterName": "oven"
                 },
                 {
                     "name": "Морозильные камеры",
@@ -61,7 +61,7 @@
                     "name": "Сушильные машины",
                     "image": "images/services/icon_dry_machine.svg",
                     "link": "#",
-                    "filterName": ""
+                    "filterName": "dryer"
                 }
             ]
         },
@@ -71,17 +71,20 @@
                 {
                     "name": "Стиральные машины",
                     "image": "",
-                    "link": "#"
+                    "link": "#",
+                    "filterName": ""
                 },
                 {
                     "name": "Посудомоечные машины",
                     "image": "",
-                    "link": "#"
+                    "link": "#",
+                    "filterName": ""
                 },
                 {
                     "name": "Кондиционеры",
                     "image": "",
-                    "link": "#"
+                    "link": "#",
+                    "filterName": ""
                 }
             ]
         },
@@ -91,37 +94,44 @@
                 {
                     "name": "Цены",
                     "image": "",
-                    "link": "#"
+                    "link": "#",
+                    "filterName": ""
                 },
                 {
                     "name": "Вопрос-ответ",
                     "image": "",
-                    "link": "#"
+                    "link": "#",
+                    "filterName": ""
                 },
                 {
                     "name": "География",
                     "image": "",
-                    "link": "#"
+                    "link": "#",
+                    "filterName": ""
                 },
                 {
                     "name": "Отзывы",
                     "image": "",
-                    "link": "#"
+                    "link": "#",
+                    "filterName": ""
                 },
                 {
                     "name": "Гарантийный случай",
                     "image": "",
-                    "link": "#"
+                    "link": "#",
+                    "filterName": ""
                 },
                 {
                     "name": "Мастера",
                     "image": "",
-                    "link": "#"
+                    "link": "#",
+                    "filterName": ""
                 },
                 {
                     "name": "Контакты",
                     "image": "",
-                    "link": "#"
+                    "link": "#",
+                    "filterName": ""
                 }
             ]
         }
