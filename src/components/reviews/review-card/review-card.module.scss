@@ -5,9 +5,8 @@
     gap: 10px;
     display: flex;
     flex-direction: column;
-    width: calc(100% / 4);
+    width: calc(100% / 4 - 20px);
     height: 100px;
-    overflow-wrap: break-word;
     .score {
         display: flex;
         gap: 5px;
