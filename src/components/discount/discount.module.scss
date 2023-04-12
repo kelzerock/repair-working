@@ -1,0 +1,61 @@
+@import '../../styles/variables.scss';
+
+.section {
+    cursor: default;
+    .section_title {
+        font-size: 1.625rem;
+        line-height: 2.125rem;
+        font-weight: 600;
+    }
+    .discount_wrapper {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        .discount_card {
+            display: flex;
+            align-items: flex-end;
+            height: 100px;
+            width: 25%;
+            border-radius: 16px;
+            background: linear-gradient(#e39a9a, #b6bae5);
+            .text_wrapper {
+                width: 100%;
+                height: 50%;
+                background: rgba(33,95,166,0.4);
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+                .percent {
+                    font-size: 1.625rem;
+                    line-height: 2.125rem;
+                    font-weight: 700;
+                    color: $main-white;
+                }
+                .title {
+                    font-size: 1.225rem;
+                    font-weight: 700;
+                    color: $main-white;
+                }
+
+            }
+        }
+    }
+    .comment {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: $display-laptop) {
+    .section {
+        .discount_wrapper {
+            flex-direction: column;
+            .discount_card {
+                height: 100px;
+                width: 100%;
+            }
+        }
+    }
+}

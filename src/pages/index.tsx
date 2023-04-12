@@ -7,6 +7,7 @@ import textServices from '../constants/json/services.json';
 import { Benefits } from '@/components/benefits';
 import { Reviews } from '@/components/reviews';
 import { Workflow } from '@/components/workflow';
+import { Discount } from '@/components/discount';
 
 const MainPage = () => {
 	return (
@@ -29,6 +30,7 @@ const MainPage = () => {
 			<Benefits />
 			<Reviews />
 			<Workflow />
+			<Discount />
 		</div>
 	)
 };
