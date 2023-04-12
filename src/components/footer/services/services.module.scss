@@ -4,11 +4,19 @@
     display: flex;
     flex-wrap: wrap;
     width: 75%;
-
+    
     .service_ul {
         list-style: none;
         margin: 0;
         width: 25%;
+        .service_name {
+            font-weight: 600;
+            border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+            padding-bottom: 5px;
+        }
+        .service_li {
+            padding: 10px 0 0 10px;
+        }
     }
 }
 .service_mobile {
@@ -26,15 +34,16 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        .service_name {
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-        }
         .service_ul {
             padding: 0 10px;
             width: calc(100% - 20px);
-            border-bottom: 1px rgba(255,255,255,0.2) solid;;
+            border-bottom: 1px rgba(255,255,255,0.2) solid;
+            .service_name {
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: none;
+            }
         }
     }
 }
