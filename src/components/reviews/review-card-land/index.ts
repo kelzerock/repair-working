@@ -1,0 +1,1 @@
+export { ReviewCardLand } from './review-card-land';

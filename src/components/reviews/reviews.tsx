@@ -4,6 +4,7 @@ import style from './reviews.module.scss';
 import textReview from '../../constants/json/reviews.json';
 import { ReviewCard } from './review-card';
 import iconArrow from '../../../public/images/services/icon_arrow_right.svg';
+import Link from 'next/link';
 
 export const Reviews = () => {
 
@@ -26,6 +27,7 @@ export const Reviews = () => {
                         <ReviewCard key={`card-review-${ind}`} {...el}/>
                     )}
                 </div>
+                <Link href={'/reviews'} className='link'><button className={style.btn}>Перейти в раздел</button></Link>
             </div>
         </div>
     )

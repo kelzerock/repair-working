@@ -18,6 +18,10 @@ html {
   transform: rotate(180deg);
 }
 
+.link {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1260px) {
   .container {
     padding: 0 20px;

@@ -1,0 +1,27 @@
+@import '../../../styles/variables.scss';
+
+.wrapper {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px dotted $main-lblue;
+    padding-bottom: 20px;
+    .score {
+        display: flex;
+        gap: 5px;
+    }
+    .title {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: $main-blue;
+    }
+    .row {
+        .author {
+            color: $main-gray;
+            font-size: .875rem;
+            line-height: 1.375rem;
+        }
+    }
+}
