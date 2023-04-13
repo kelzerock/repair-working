@@ -8,13 +8,17 @@ import iconCrumbs from '../../public/images/reviews/icon_crumbs.svg';
 import iconSpoiler from '../../public/images/services/icon_spoiler_blue.svg';
 import classNames from 'classnames';
 import { ReviewCardLand } from '@/components/reviews/review-card-land';
+import { Modal } from '@/components/modal';
+import { useScrollLock } from '@/hooks/scroll-lock';
 
 const ReviewPage = () => {
 	const [isShowing, setIsShowing] = useState(false);
-
+	const [isShowingModal, setIsShowingModal] = useState(false);
+	const { lockScroll } = useScrollLock();
 
 	return (
 		<div className={classNames(style.section, 'container')}>
+			{isShowingModal && <Modal isShowingModal={isShowingModal} setIsShowingModal={setIsShowingModal} />}
 			<div className={style.crumbs_wrapper}>
 				<Link href={'/'}>Главная</Link>
 				<Image src={iconCrumbs} alt='crumbs' className={style.crumbs_icon}/>
@@ -37,10 +41,19 @@ const ReviewPage = () => {
                     </div>
                 </div>
 			</div>
-			<button className={style.btn}>Оставить отзыв</button>
+			<button
+				className={style.btn}
+				onClick={(e) => {
+					e.preventDefault();
+					e.stopPropagation();
+					setIsShowingModal(true);
+					lockScroll()
+					}
+				}
+			>Оставить отзыв</button>
 			<div
                 className={style.list_header}
-                onClick={() => setIsShowing(!isShowing)}
+                onClick={() => {setIsShowing(!isShowing); }}
                 role='presentation'
             >
                 <h3 className={style.title}>Показать все отзывы</h3>
