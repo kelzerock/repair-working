@@ -1,6 +1,7 @@
 import Header from '../Header/Header.component';
 import { Footer } from '../footer';
 import style from './layout.module.scss'
+import Advertise from '../advertise/advertise.component';
 
 const Layout = ({ children }:any) => {
   return (
@@ -11,6 +12,7 @@ const Layout = ({ children }:any) => {
         {children}
         </div>
       </div>
+      <Advertise />
       <Footer />
     </>
   );
