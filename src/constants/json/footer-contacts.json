@@ -21,7 +21,7 @@
         },
         {
             "name": "facebook",
-            "image": "images/facebook-round-icon.svg",
+            "image": "/images/facebook-round-icon.svg",
             "link": "#"
         },
         {
