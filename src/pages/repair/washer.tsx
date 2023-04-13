@@ -6,6 +6,8 @@ import RepairTitle from "@/components/Repair-block/Repair-title/Repair-title.com
 import textData from "@/constants/json/repaire.json";
 import textDataPrice from "@/constants/json/repaire-price.json";
 import { Reviews } from "@/components/reviews";
+import RepairBreak from "@/components/Repair-block/Repair-break/repair-break.component";
+import textBreak from "@/constants/json/repair-break.json"
 
 const WasherPage = () => {
   return (
@@ -16,6 +18,7 @@ const WasherPage = () => {
       <RepairInfo />
       <RepairPrice data={textDataPrice.washer.data}/>
       <Reviews />
+      <RepairBreak filter={textBreak.washer.header} />
     </>
   );
 };
