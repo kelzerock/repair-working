@@ -1,0 +1,126 @@
+@import '../../styles/variables.scss';
+
+.section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(54, 54, 54, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    overflow: hidden;
+}
+.wrapper {
+    width: 528px;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+.close_icon {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    border: none;
+    background: #F9F9FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.close_icon:hover {
+    background-color: $main-lgray;
+}
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin: 48px auto;
+    width: 416px;
+    box-sizing: border-box;
+}
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #363636;
+    padding: 0 50px;
+}
+.btn {
+    color: $main-white;
+    background: $main-blue;
+    border-radius: 32px;
+    box-shadow: 0 4px 12px rgba(35,100,175,0.2);
+    transition: background-color .3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 8px 24px;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: fit-content;
+}
+.btn:hover {
+    background-color: $main-dblue;
+}
+.textarea {
+    width: 416px;
+    height: 132px;
+    border: none;
+    background: #F9F9FA;
+    border-radius: 4px;
+    padding: 19px 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #363636;
+}
+.textarea::placeholder {
+    color: #A7A7A7;
+}
+.btn:disabled {
+    background: #EBEBEB;
+    cursor: default;
+}
+
+@media screen and (max-width: 528px) {
+    .wrapper {
+        width: 288px;
+    }
+    .modal {
+        width: 288px;
+    }
+    .close_icon {
+        width: 32px;
+        height: 32px;
+        top: 16px;
+        right: 16px;
+    }
+    .title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .textarea {
+        width: 256px;
+    }
+    .btn {
+        width: 256px;
+        height: 40px;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
