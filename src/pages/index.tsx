@@ -8,6 +8,7 @@ import { Benefits } from '@/components/benefits';
 import { Reviews } from '@/components/reviews';
 import { Workflow } from '@/components/workflow';
 import { Discount } from '@/components/discount';
+import Link from 'next/link';
 
 const MainPage = () => {
 	return (
@@ -18,11 +19,11 @@ const MainPage = () => {
 				<p className={style.section__description}>{textInfo.description}</p>
 				<div className={style.section__services}>
 					{textServices.services[0].list.map((el, ind) => (
-						<button key={`button-list-${ind}`} className={style.section__btn}>
+						<Link key={`button-list-${ind}`} href={el.link} className={style.section__btn}>
 							<Image src={el.image} alt={el.name} width={32} height={32}/>
 							<span>{el.name}</span>
 							<Image src={iconArrowRight} alt='arrow right' width={16} height={16}/>
-						</button>
+						</Link>
 						))
 					}
 				</div>

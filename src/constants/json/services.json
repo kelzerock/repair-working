@@ -6,37 +6,37 @@
                 {
                     "name": "Стиральные машины",
                     "image": "images/services/icon_washer.svg",
-                    "link": "#",
+                    "link": "/repair/washer",
                     "filterName": "washer"
                 },
                 {
                     "name": "Посудомоечные машины",
                     "image": "images/services/icon_dishwasher.svg",
-                    "link": "#",
+                    "link": "/repair/dishwasher",
                     "filterName": "dishwasher"
                 },
                 {
                     "name": "Варочные панели",
                     "image": "images/services/icon_cook.svg",
-                    "link": "#",
+                    "link": "/repair/hob",
                     "filterName": "hob"
                 },
                 {
                     "name": "Электроплиты",
                     "image": "images/services/icon_electric_cook.svg",
-                    "link": "#",
+                    "link": "/repair/stove",
                     "filterName": "stove"
                 },
                 {
                     "name": "Духовые шкафы",
                     "image": "images/services/icon_cooker.svg",
-                    "link": "#",
+                    "link": "/repair/oven",
                     "filterName": "oven"
                 },
                 {
                     "name": "Сушильные машины",
                     "image": "images/services/icon_dry_machine.svg",
-                    "link": "#",
+                    "link": "/repair/dryer",
                     "filterName": "dryer"
                 }
             ]
@@ -47,19 +47,13 @@
                 {
                     "name": "Стиральные машины",
                     "image": "",
-                    "link": "#",
+                    "link": "/washer",
                     "filterName": ""
                 },
                 {
                     "name": "Посудомоечные машины",
                     "image": "",
-                    "link": "#",
-                    "filterName": ""
-                },
-                {
-                    "name": "Кондиционеры",
-                    "image": "",
-                    "link": "#",
+                    "link": "/dishwasher",
                     "filterName": ""
                 }
             ]
