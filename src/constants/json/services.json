@@ -4,12 +4,6 @@
             "name": "Ремонт",
             "list": [
                 {
-                    "name": "Холодильники",
-                    "image": "images/services/icon_fridge.svg",
-                    "link": "#",
-                    "filterName": ""
-                },
-                {
                     "name": "Стиральные машины",
                     "image": "images/services/icon_washer.svg",
                     "link": "#",
@@ -20,18 +14,6 @@
                     "image": "images/services/icon_dishwasher.svg",
                     "link": "#",
                     "filterName": "dishwasher"
-                },
-                {
-                    "name": "Телевизоры",
-                    "image": "images/services/icon_tv.svg",
-                    "link": "#",
-                    "filterName": ""
-                },
-                {
-                    "name": "Кондиционеры",
-                    "image": "images/services/icon_condition.svg",
-                    "link": "#",
-                    "filterName": ""
                 },
                 {
                     "name": "Варочные панели",
@@ -50,12 +32,6 @@
                     "image": "images/services/icon_cooker.svg",
                     "link": "#",
                     "filterName": "oven"
-                },
-                {
-                    "name": "Морозильные камеры",
-                    "image": "images/services/icon_fridge_box.svg",
-                    "link": "#",
-                    "filterName": ""
                 },
                 {
                     "name": "Сушильные машины",

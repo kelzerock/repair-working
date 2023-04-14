@@ -35,12 +35,12 @@ export const Footer = () => (
                     </div>
                     <div className={style.contacts_container}>
                         <Image src={emailIcon} alt='email' height={24} width={24} className={style.icon}/>
-                        <p>{textInfo.contacts.email}</p>
+                        <a href={`mailto:${textInfo.contacts.email}`}>{textInfo.contacts.email}</a>
                     </div>
-                    <div className={style.contacts_container}>
+                    {/* <div className={style.contacts_container}>
                         <Image src={locationIcon} alt='address' height={24} width={24} className={style.icon}/>
                         <p>{textInfo.contacts.address}</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className={style.secondblock}>

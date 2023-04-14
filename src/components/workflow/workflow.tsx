@@ -15,7 +15,7 @@ export const Workflow = () => {
                 onClick={() => setIsShowing(!isShowing)}
                 role='presentation'
             >
-                <h2 className={style.title}>Схема работы</h2>
+                <h2 className={style.title}>Система работы</h2>
                 <span><Image src={iconSpoiler} alt='spoiler' className={classNames({'rotate': !isShowing})}/></span>
             </div>
             <ul
