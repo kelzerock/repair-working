@@ -36,7 +36,7 @@
             display: flex;
             gap: 10px;
             .contacts_container {
-                width: 25%;
+                width: calc(100% / 3);
                 display: flex;
                 align-items: center;
                 gap: 15px;
@@ -53,7 +53,7 @@
     .secondblock {
         display: flex;
         border-top: 1px rgba(255,255,255,0.2) solid;
-        padding-top: 20px;
+        padding: 20px 0;
         .customer {
             width: 25%;
         }

@@ -1,33 +1,32 @@
 import classNames from 'classnames';
-import Image from 'next/image';
 import style from './reviews.module.scss';
 import textReview from '../../constants/json/reviews.json';
 import { ReviewCard } from './review-card';
-import iconArrow from '../../../public/images/services/icon_arrow_right.svg';
 import Link from 'next/link';
 
 export const Reviews = () => {
 
     return (
         <div className={classNames(style.section, 'container')}>
-            <h4 className={style.title}>Новые отзывы</h4>
+            {/* <h4 className={style.title}>Новые отзывы</h4> */}
             <div className={style.wrapper}>
                 <div className={style.score_wrapper}>
                     <div className={style.score_div}>
                         <p className={style.score_num}>{textReview.total.percent}%</p>
                         <p className={style.score_text}>положительных отзывов</p>
-                        <Image src={iconArrow} alt='arrow to right'/>
-                    </div>
-                    <div className={style.score_div_desc}>
-                        <p className={style.score_desc}>{textReview.total.count} отзыва оставили клиенты</p>
                     </div>
                 </div>
-                <div className={style.reviews}>
-                    {textReview.reviews.map((el, ind) => 
-                        <ReviewCard key={`card-review-${ind}`} {...el}/>
-                    )}
+                <Link href={'/reviews'} className={classNames('link', style.link_btn)}><button className={style.btn}>Перейти в раздел</button></Link>
+            </div>
+            <div className={style.wrapper}>
+                <div className={style.feedback_wrapper}>
+                    <textarea
+                        className={style.textarea}
+                        placeholder='Поделитесь вашим мнением о работе с нашей компанией'
+                        // onChange={(e) => setModalText(e.target.value)}
+                    />
                 </div>
-                <Link href={'/reviews'} className='link'><button className={style.btn}>Перейти в раздел</button></Link>
+                <Link href={'#'} className={classNames('link', style.link_btn)}><button className={style.btn}>Отправить отзыв</button></Link>
             </div>
         </div>
     )
