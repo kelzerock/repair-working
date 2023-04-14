@@ -16,7 +16,7 @@ export const Reviews = () => {
                         <p className={style.score_text}>положительных отзывов</p>
                     </div>
                 </div>
-                <Link href={'/reviews'} className='link'><button className={style.btn}>Перейти в раздел</button></Link>
+                <Link href={'/reviews'} className={classNames('link', style.link_btn)}><button className={style.btn}>Перейти в раздел</button></Link>
             </div>
             <div className={style.wrapper}>
                 <div className={style.feedback_wrapper}>
@@ -26,7 +26,7 @@ export const Reviews = () => {
                         // onChange={(e) => setModalText(e.target.value)}
                     />
                 </div>
-                <Link href={'#'} className='link'><button className={style.btn}>Отправить отзыв</button></Link>
+                <Link href={'#'} className={classNames('link', style.link_btn)}><button className={style.btn}>Отправить отзыв</button></Link>
             </div>
         </div>
     )

@@ -36,9 +36,6 @@ const ReviewPage = () => {
                         <p className={style.score_num}>{textReview.total.percent}%</p>
                         <p className={style.score_text}>положительных отзывов</p>
                     </div>
-                    <div className={style.score_div_desc}>
-                        <p className={style.score_desc}>{textReview.total.count} отзыва оставили клиенты</p>
-                    </div>
                 </div>
 			</div>
 			<button
