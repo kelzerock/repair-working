@@ -19,7 +19,7 @@ const OvenPage = () => {
       <RepairInfo />
       <RepairPrice data={textDataPrice.oven.data}/>
       <Reviews />
-      <RepairBreak filter={textBreak.washer.header} />
+      <RepairBreak filter={textBreak.oven.header} />
     </>
   );
 };

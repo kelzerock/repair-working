@@ -18,7 +18,7 @@ const DryerPage = () => {
       <RepairInfo />
       <RepairPrice data={textDataPrice.dryer.data}/>
       <Reviews />
-      <RepairBreak filter={textBreak.washer.header} />
+      <RepairBreak filter={textBreak.dryer.header} />
     </>
   );
 };

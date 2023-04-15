@@ -18,7 +18,7 @@ const HobPage = () => {
       <RepairInfo />
       <RepairPrice data={textDataPrice.hob.data}/>
       <Reviews />
-      <RepairBreak filter={textBreak.washer.header} />
+      <RepairBreak filter={textBreak.hob.header} />
     </>
   );
 };

@@ -74,63 +74,63 @@
       "imgAlt": "dishwasher ne moet",
       "title": "не моет",
       "info": ["Замена циркуляционного насоса", "Замена модуля управления"],
-      "price": 0
+      "price": 140
     },
     {
       "img": "/images/repair/dishwasher/ne-sliv.png",
       "imgAlt": "dishwasher ne slivaet",
       "title": "не сливает",
       "info": ["Замена сливного насоса", "Ремонт или замена прессостата"],
-      "price": 0
+      "price": 130
     },
     {
       "img": "/images/repair/dishwasher/ne-nabiraet.png",
       "imgAlt": "dishwasher ne nabiraet",
       "title": "не набирает",
       "info": ["Замена впускного клапана", "Ремонт или замена прессостата"],
-      "price": 0
+      "price": 120
     },
     {
       "img": "/images/repair/dishwasher/ne-vkl.png",
       "imgAlt": "dishwasher ne vkluchaetsia",
       "title": "не включается",
       "info": ["Замена модуля управления", "Кнопка включения"],
-      "price": 0
+      "price": 150
     },
     {
       "img": "/images/repair/dishwasher/oshibka.png",
       "imgAlt": "dishwasher oshibka ",
       "title": "горит ошибка",
       "info": ["Ремонт модуля управления", "Замена сливного насоса"],
-      "price": 0
+      "price": 70
     },
     {
       "img": "/images/repair/dishwasher/ploho-moet.png",
       "imgAlt": "dishwasher ploho moet",
       "title": "плохо моет",
       "info": ["Замена разбрызгивателя", "Замена ТЭН (нагревателя воды)"],
-      "price": 0
+      "price": 120
     },
     {
       "img": "/images/repair/dishwasher/ne-greet.png",
       "imgAlt": "dishwasher ne greet",
       "title": "не греет",
       "info": ["Замена термодатчика"],
-      "price": 0
+      "price": 120
     },
     {
       "img": "/images/repair/dishwasher/techet.png",
       "imgAlt": "dishwasher techet",
       "title": "течёт",
       "info": ["Замена уплотнителя дверцы", "Замена патрубка"],
-      "price": 0
+      "price": 50
     },
     {
       "img": "/images/repair/dishwasher/migaut.png",
       "imgAlt": "dishwasher migaut",
       "title": "мигают индикаторы",
       "info": ["Замена модуля управления", "Замена сливного насоса"],
-      "price": 0
+      "price": 130
     }
   ]},
   "oven": {
@@ -141,42 +141,42 @@
       "imgAlt": "oven ne vkluchaetsia",
       "title": "не включается",
       "info": ["Ремонт модуля управления", "Замена переключателя режимов"],
-      "price": 0
+      "price": 130
     },
     {
       "img": "/images/repair/oven/oshibka.png",
       "imgAlt": "oven oshibka",
       "title": "выдает ошибку",
       "info": ["Замена ТЭН", "Ремонт силового модуля"],
-      "price": 0
+      "price": 120
     },
     {
       "img": "/images/repair/oven/sama-otkluchaetsya.png",
       "imgAlt": "oven otkluchaetsia",
       "title": "отключается сам",
       "info": ["Ремонт силового модуля", "Замена ТЭН"],
-      "price": 0
+      "price": 120
     },
     {
       "img": "/images/repair/oven/ne-greet.png",
       "imgAlt": "oven ne greet",
       "title": "не греет",
       "info": ["Замена нагревателя", "Замена переключателя режимов"],
-      "price": 0
+      "price": 70
     },
     {
       "img": "/images/repair/oven/ne-zakryvaetsya.png",
       "imgAlt": "oven ne zakrivaetsia",
       "title": "не закрывается",
       "info": ["Замена уплотнителя", "Замена замка дверцы"],
-      "price": 0
+      "price": 120
     },
     {
       "img": "/images/repair/oven/ne-propekaet.png",
       "imgAlt": "oven ne propekaet",
       "title": "не пропекает",
       "info": ["Замена ТЭН", "Замена вентилятора"],
-      "price": 0
+      "price": 200
     }
   ]},
   "stove": {
@@ -187,49 +187,49 @@
       "imgAlt": "stove",
       "title": "не работает духовка",
       "info": ["Замена ТЭНа духового шкафа", "Замена переключателя мощности духовки"],
-      "price": 0
+      "price": 120
     },
     {
       "img": "/images/repair/stove/ne-rab-konforka.png",
       "imgAlt": "stove",
       "title": "не работает конфорка",
       "info": ["Замена конфорки", "Замена регулятора мощности конфорки"],
-      "price": 0
+      "price": 140
     },
     {
       "img": "/images/repair/stove/ne-vkl.png",
       "imgAlt": "stove",
       "title": "не включается",
       "info": ["Ремонт блока управления", "Замена платы сенсора управления"],
-      "price": 0
+      "price": 120
     },
     {
       "img": "/images/repair/stove/oshibka.png",
       "imgAlt": "stove",
       "title": "выдает ошибку",
       "info": ["Ремонт модуля управления", "Замена конфорки"],
-      "price": 0
+      "price": 140
     },
     {
       "img": "/images/repair/stove/vybivaet.png",
       "imgAlt": "stove",
       "title": "выбивает пробки",
       "info": ["Замена конфорки","Ремонт модуля управления"],
-      "price": 0
+      "price": 140
     },
     {
       "img": "/images/repair/stove/otkluchaetsya.png",
       "imgAlt": "stove",
       "title": "отключается сама",
       "info": ["Замена регулятора мощности конфорки", "Замена силового модуля управления"],
-      "price": 0
+      "price": 130
     },
     {
       "img": "/images/repair/stove/ne-greet.png",
       "imgAlt": "stove",
       "title": "не греет",
       "info": ["Замена конфорки", "Замена регулятора мощности конфорки"],
-      "price": 0
+      "price": 130
     }
   ]},
   "hob": {
@@ -240,116 +240,116 @@
       "imgAlt": "hob",
       "title": "не включается",
       "info": ["Ремонт силового модуля", "Замена термопредохранителя"],
-      "price": 0
+      "price": 130
     },
     {
       "img": "/images/repair/hob/oshibka.png",
       "imgAlt": "hob",
       "title": "выдает ошибку",
       "info": ["Ремонт силового модуля", "Замена платы сенсора"],
-      "price": 0
+      "price": 130
     },
     {
       "img": "/images/repair/hob/ne-otkluchaet.png",
       "imgAlt": "hob",
       "title": "не отключается",
       "info": ["Ремонт силового модуля", "Замена регулятора мощности конфорки"],
-      "price": 0
+      "price": 140
     },
     {
       "img": "/images/repair/hob/ne-rab-konforka.png",
       "imgAlt": "hob",
       "title": "не работает конфорка",
       "info": ["Замена конфорки", "Ремонт силового модуля"],
-      "price": 0
+      "price": 130
     },
     {
       "img": "/images/repair/hob/ne-greet.png",
       "imgAlt": "hob",
       "title": "не греет",
       "info": ["Ремонт силового модуля", "Замена конфорки"],
-      "price": 0
+      "price": 130
     },
     {
       "img": "public/images/repair/hob/sensor.png",
       "imgAlt": "hob",
       "title": "не работает сенсор",
       "info": ["Замена платы сенсора", "Замена термопредохранителя"],
-      "price": 0
+      "price": 100
     },
     {
       "img": "/images/repair/hob/vybivaet.png",
       "imgAlt": "hob",
       "title": "выбивает пробки",
       "info": ["Замена силового модуля", "Замена шнура"],
-      "price": 0
+      "price": 100
     }
   ]},
   "dryer": {
     "header": "dryer",
     "data":[
     {
-      "img": "",
-      "imgAlt": "",
+      "img": "/images/repair/dryer/ne-greet-water.png",
+      "imgAlt": "dryer",
       "title": "не сушит белье",
       "info": ["Замена ТЭН", "Замена датчика температуры"],
-      "price": 0
+      "price": 120
     },
     {
-      "img": "",
-      "imgAlt": "",
+      "img": "/images/repair/dryer/oshibka.png",
+      "imgAlt": "dryer",
       "title": "выдает ошибку",
       "info": ["Замена ТЭН", "Ремонт модуля управления"],
-      "price": 0
+      "price": 150
     },
     {
-      "img": "",
-      "imgAlt": "",
+      "img": "/images/repair/dryer/ne-vkl.png",
+      "imgAlt": "dryer",
       "title": "не включается",
       "info": ["Ремонт блока управления", "Замена пускового конденсатора"],
-      "price": 0
+      "price": 130
     },
     {
-      "img": "",
-      "imgAlt": "",
+      "img": "/images/repair/dryer/ne-otkriv.png",
+      "imgAlt": "dryer",
       "title": "не открывается",
       "info": ["Замена замка", "Ремонт платы управления"],
-      "price": 0
+      "price": 100
     },
     {
-      "img": "",
-      "imgAlt": "",
+      "img": "/images/repair/dryer/ne-krutit-baraban.png",
+      "imgAlt": "dryer",
       "title": "не крутит барабан",
       "info": ["Замена ремня", "Замена щеток мотора"],
-      "price": 0
+      "price": 140
     },
     {
-      "img": "",
-      "imgAlt": "",
+      "img": "/images/repair/dryer/shumit.png",
+      "imgAlt": "dryer",
       "title": "шумит",
       "info": ["Замена подшипников", "Замена роликов"],
-      "price": 0
+      "price": 250
     },
     {
-      "img": "",
-      "imgAlt": "",
+      "img": "/images/repair/dryer/techet.png",
+      "imgAlt": "dryer",
       "title": "течёт",
       "info": ["Замена сливного насоса", "Замена патрубка"],
-      "price": 0
+      "price": 70
     },
     {
-      "img": "",
-      "imgAlt": "",
+      "img": "/images/repair/dryer/ne-zakruvaetsa.png",
+      "imgAlt": "dryer",
       "title": "не закрывается",
       "info": ["Замена УБЛ", "Ремонт блока управления"],
-      "price": 0
+      "price": 140
     },
     {
-      "img": "",
-      "imgAlt": "",
+      "img": "/images/repair/dryer/migaut.png",
+      "imgAlt": "dryer",
       "title": "мигают индикаторы",
       "info": ["Замена ТЭН", "Ремонт блока управления"],
-      "price": 0
+      "price": 120
     }
   ]}
 }

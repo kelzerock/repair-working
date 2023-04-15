@@ -1,13 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    
-    <title>check</title>
-    <desc>Created with sketchtool.</desc>
-    <g id="web-app" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="check" fill="#000000">
-            <polygon id="Shape" points="6 10 4 12 10 18 20 8 18 6 10 14">
-</polygon>
-        </g>
-    </g>
-</svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#51b2c0">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <title>check</title> <desc>Created with sketchtool.</desc> <g id="web-app" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="check" fill="#51b2c0"> <polygon id="Shape" points="6 10 4 12 10 18 20 8 18 6 10 14"> </polygon> </g> </g> </g>
+</svg>

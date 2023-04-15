@@ -18,7 +18,7 @@ const DishwasherPage = () => {
       <RepairInfo />
       <RepairPrice data={textDataPrice.dishwasher.data}/>
       <Reviews />
-      <RepairBreak filter={textBreak.washer.header} />
+      <RepairBreak filter={textBreak.dishwasher.header} />
     </>
   );
 };
