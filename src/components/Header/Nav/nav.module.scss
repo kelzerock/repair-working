@@ -2,6 +2,8 @@
 
 .nav {
   flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
 
   ul {
     display: flex;
@@ -21,6 +23,7 @@
           color: $main-black;
           border-bottom: solid $main-black 2px;
         }
+
       }
 
       .header_sub_link {
@@ -31,8 +34,22 @@
           color: $main-blue;
           font-weight: 500;
           transition: color .3s;
+          display: flex;
+          align-items: center;
+          column-gap: 5px;
+
+          .nav_arrow,
+          nav_arrow_black {
+            width: 15px;
+            height: auto;
+          }
+
+          .nav_arrow_black {
+            display: none;
+          }
         }
 
+        
         .addiction_nav {
           display: none;
           position: absolute;
@@ -43,7 +60,19 @@
           border: solid $main-black 2px;
           border-radius: 6px;
         }
+        
+        &:hover {
+          .nav_arrow {
+            display: none;
+          }
 
+          .nav_arrow_black {
+            display: inherit;
+            width: 15px;
+            height: auto;
+          }
+        }
+        
         &:hover .addiction_nav {
           display: flex;
 

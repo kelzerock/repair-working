@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="nav-menu__item-icon" width="8"  height="4" ><defs><symbol viewBox="0 0 8 4" id="icon_triangle">
+  <path d="M8 0H0l4 4 4-4z"></path>
+</symbol></defs>
+                                            <use xlink:href="#icon_triangle" fill="#F99E15"></use>
+                                        </svg>
