@@ -9,6 +9,7 @@ import { Reviews } from '@/components/reviews';
 import { Workflow } from '@/components/workflow';
 import { Discount } from '@/components/discount';
 import Link from 'next/link';
+import Advertise from '@/components/advertise/advertise.component';
 
 const MainPage = () => {
 	return (
@@ -32,6 +33,7 @@ const MainPage = () => {
 			<Reviews />
 			<Workflow />
 			<Discount />
+			{/* <Advertise /> */}
 		</div>
 	)
 };

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import style from "./nav.module.scss";
 import { linkArr } from "@/constant/header-constant";
+import Image from "next/image";
 
 const Nav = () => {
   return (
@@ -11,7 +12,26 @@ const Nav = () => {
             return (
               <li key={index}>
                 <div className={style.header_sub_link}>
-                  <span>{el.namePage}</span>
+                  <span>
+                    {el.namePage}
+                    <Image
+                      className={style.nav_arrow}
+                      src="/images/header/small-arrow.svg"
+                      alt="arrow"
+                      width="10"
+                      height="10"
+                      sizes="100vw"
+                    />
+                    <Image
+                      className={style.nav_arrow_black}
+                      src="/images/header/small-arrow-black.svg"
+                      alt="arrow"
+                      width="10"
+                      height="10"
+                      sizes="100vw"
+                    />
+                  </span>
+
                   <div className={style.addiction_nav}>
                     <ul>
                       {el.subelements.map((element, index) => {

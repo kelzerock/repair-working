@@ -9,9 +9,12 @@
     margin: 0 10px;
     display: flex;
     align-items: center;
+    column-gap: 10px;
 
     img {
       margin: 0 3px;
+      width: 16px;
+      height: auto;;
     }
 
     span {
@@ -22,16 +25,13 @@
 
 @media screen and (max-width: 1260px) {
   .header_firm_info {
-  
+
     flex: 1 1 auto;
     margin: 0;
-    padding: 0;
+    padding: 0 0 20px 10px;
     align-self: flex-end;
     justify-content: flex-start;
-    padding-bottom: 20px;
 
-
-    
     li:nth-child(n+2) {
       display: none;
     }
@@ -40,12 +40,12 @@
 
 
 @media screen and (max-width: 700px) {
-  
+
   .header_firm_info {
-  
+
     span {
       width: 97px;
     }
-    
+
   }
 }
