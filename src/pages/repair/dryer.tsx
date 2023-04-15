@@ -13,7 +13,6 @@ import RepairTitleDryer from "@/components/Repair-block/Repair-title/Repair-titl
 const DryerPage = () => {
   return (
     <>
-      {/* <RepairTitle data={textData["title-block"].dryer} /> */}
       <RepairTitleDryer />
       <Benefits />
       <RepairCalculating />

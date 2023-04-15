@@ -4,19 +4,31 @@
   padding: 10px 30px;
 
   .repair_info_white {
-    h2 {}
+    max-width: 1000px;
 
-    p {}
+    h2 {
+      font-size: 2rem;
+      margin: 32px 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
   }
 
   .repair_info_blue {
-    padding: 10px;
-    width: 80%;
+    padding: 24px 24px 24px 32px;
+    max-width: 1000px;
     border-radius: 0 40px 40px 0;
     background: rgb(13, 88, 158);
     background: linear-gradient(0deg, rgb(18, 64, 107) 0%, rgb(21, 84, 161) 100%);
 
-    h4,
+    h4 {
+      font-size: 1.3rem;
+      color: $main-white;
+      margin: 0 0 12px;
+    }
+
     p {
       color: $main-white;
       margin: 5px 0;
@@ -25,35 +37,35 @@
   }
 }
 
-@media screen and (max-width: 750px) {  
+@media screen and (max-width: 750px) {
 
   .repair_info {
-    padding: 10px 0px;
-  
+    padding: 10px 0;
+
     .repair_info_white {
-      h2,p {
-        margin: 5px 0;
-        text-align: center;
+      padding: 0 24px;
+
+      .title {
+        font-size: 1.5rem;
       }
 
-      p {
-        text-align: justify;
-        font-size: .7rem;
+      .info {
+        font-size: .9rem;
       }
     }
-  
+
     .repair_info_blue {
-      padding: 10px;
-      width: auto;
+      padding: 24px 24px 24px 32px;
       border-radius: 0 40px 0 40px;
-  
-      h4,
-      p {
-        color: $main-white;
-        margin: 5px 0;
+
+      .minorTitle {
+        font-size: 1rem;
+        font-weight: normal;
       }
-  
+
+      .text {
+        font-size: .9rem;
+      }
     }
   }
-
 }
