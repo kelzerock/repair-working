@@ -32,7 +32,7 @@ const RepairBreak = ({filter}:any) => {
                 <ul>
                   {el.info.map((elem, ind)=>(
                     <li key={ind}>
-                      <Image src="/images/repair/check-svgrepo-com.svg" alt="check" width={10} height={10}/>
+                      <Image src="/images/repair/check-svgrepo-com.svg" alt="check" width={20} height={20}/>
                       <p>{elem}</p>
                     </li>
                   ))}
