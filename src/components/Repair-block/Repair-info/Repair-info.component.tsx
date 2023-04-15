@@ -1,13 +1,6 @@
 import style from "./repair-info.module.scss";
 import textData from "@/constants/json/repaire.json";
 
-interface PriceInformationInterface {
-  title: string;
-  info: string;
-  minorTitle: string;
-  text: string;
-}
-
 const RepairInfo = () => {
   const { priceInformation } = textData;
   return (

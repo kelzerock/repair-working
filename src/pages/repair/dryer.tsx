@@ -8,11 +8,13 @@ import RepairPrice from "@/components/Repair-block/Repair-price/RepairPrice.comp
 import { Reviews } from "@/components/reviews";
 import textBreak from "@/constants/json/repair-break.json"
 import RepairBreak from "@/components/Repair-block/Repair-break/repair-break.component";
+import RepairTitleDryer from "@/components/Repair-block/Repair-title/Repair-title-dryer.component";
 
 const DryerPage = () => {
   return (
     <>
-      <RepairTitle data={textData["title-block"].dryer} />
+      {/* <RepairTitle data={textData["title-block"].dryer} /> */}
+      <RepairTitleDryer />
       <Benefits />
       <RepairCalculating />
       <RepairInfo />
