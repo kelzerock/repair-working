@@ -19,7 +19,7 @@ export interface TextDataPrice {
 }
 
 const RepairPrice = ({ data }: TextDataPrice) => {
-  console.log(data)
+
   const [isData, setIsData] = useState([
     { id: 0, check: false },
     { id: 1, check: true },
