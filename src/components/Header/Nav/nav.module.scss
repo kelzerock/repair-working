@@ -54,10 +54,9 @@
           display: none;
           position: absolute;
           overflow: hidden;
-          width: 200px;
           height: auto;
-          background-color: $main-blue;
-          border: solid $main-black 2px;
+          background-color: $main-white;
+          padding: 16px 24px;
           border-radius: 6px;
         }
         
@@ -79,13 +78,24 @@
           ul {
             display: flex;
             flex-direction: column;
-            row-gap: 5px;
+            row-gap: 10px;
             padding: 3px;
 
-            li,
+            li {
+              line-height: 1.5rem;
+              text-decoration: none;
+            }
+
             a {
-              font-size: .9rem;
-              color: $main-white;
+              text-decoration: none;
+              padding: 5px 0;
+              font-size: 1rem;
+              color: $main-black;
+              font-weight: normal;
+              &:hover {
+                color: $main-blue;
+                border-bottom: none
+              }
             }
           }
         }

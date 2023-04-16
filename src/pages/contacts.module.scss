@@ -1,0 +1,35 @@
+@import "@/styles/variables.scss";
+
+.block {
+  max-width: 1000px;
+  padding: 0 20px;
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  ul {
+    list-style-type: none;
+    li {
+      font-size: 1.3rem;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 0;
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-image: url('/images/faq/list_decor.svg');
+        background-repeat: no-repeat;
+        background-position: center right;
+        margin-right: 8px;
+      }
+    }
+  }
+}
