@@ -28,6 +28,7 @@ const RepairPrice = ({ data }: TextDataPrice) => {
   const [isShowingSmall, setIsShowingSmall] = useState(true);
   const [isShowingMiddle, setIsShowingMiddle] = useState(true);
   const [isShowingBig, setIsShowingBig] = useState(true);
+  const [isTest, setIsTest] = useState([])
 
   const { small, middle, big } = data;
 
@@ -123,8 +124,78 @@ const RepairPrice = ({ data }: TextDataPrice) => {
         ))}
       </ul>
     </div>
+
+    <Test />
     </>
   );
 };
 
 export default RepairPrice;
+
+const tt = [
+  {title: '1', data: ['a', 'b','c']},
+  {title: '2', data: ['1a', '1b','1c']},
+  {title: '3', data: ['1', '2','3']},
+]
+
+const Test = () => {
+
+  const [isTest, setIsTest] = useState([
+    {id: 0, check: false},
+    {id: 1, check: false},
+    {id: 2, check: false},
+    {id: 3, check: false},
+    {id: 4, check: false},
+    {id: 5, check: false},
+  ])
+  interface Test {
+    id: number,
+    check: boolean
+  }
+
+  const handleTest = (ind:number) => {
+  console.log(isTest)
+    let xxx = isTest.map(el=> {
+      if(el.id === ind){
+          return {id: el.id, check: !el.check}
+        } else {
+          return {id: el.id, check: el.check}
+        }
+    })
+
+    setIsTest(xxx)    
+    }
+
+
+    // console.log((event as MouseEvent).target)
+    // let ev = (event as MouseEvent).target
+    // let xx  = ev? ((ev as HTMLElement).closest('div') as HTMLElement) : '';
+    // let yy  = (xx as HTMLElement).dataset.key
+    // console.log(yy)
+    // SetIsTest(
+    //   isTest.map((el: any, index: number):any=>{
+    //     el.id === parseInt(yy)
+    //     ? {...isTest, check: isTest[el.id]}
+    //     : {...isTest}
+    //   }))
+
+  // }
+
+
+
+  return (
+    <div>
+      {tt.map((el, index)=>(
+        
+        <div className={classNames(style.testing,  !isTest[index].check ? style.red : "" )} data-key={index} key={index}  
+        onClick={()=>{handleTest(index)}}>
+          <h1>{el.title}</h1>
+          {el.data.map((elem, ind)=>(
+            <p key={ind}>{elem}</p>
+          ))}
+        </div>
+      ))
+        }
+    </div>
+  )
+}
