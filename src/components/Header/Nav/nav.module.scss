@@ -58,7 +58,10 @@
           background-color: $main-white;
           padding: 16px 24px;
           border-radius: 6px;
+
         }
+
+        
         
         &:hover {
           .nav_arrow {
@@ -75,7 +78,7 @@
         &:hover .addiction_nav {
           display: flex;
 
-          ul {
+           ul {
             display: flex;
             flex-direction: column;
             row-gap: 10px;
@@ -98,6 +101,10 @@
               }
             }
           }
+        }
+
+        &:hover .addiction_nav.hidden {
+          display: none;
         }
       }
 

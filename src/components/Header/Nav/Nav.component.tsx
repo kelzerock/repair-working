@@ -2,8 +2,13 @@ import Link from "next/link";
 import style from "./nav.module.scss";
 import linkArr from "@/constants/json/path.json";
 import Image from "next/image";
+import { useState } from "react";
+import classNames from "classnames";
 
 const Nav = () => {
+
+  const [isShow, setIsShow] = useState('')
+
   return (
     <nav className={style.nav}>
       <ul>
@@ -32,7 +37,9 @@ const Nav = () => {
                     />
                   </span>
 
-                  <div className={style.addiction_nav}>
+                  <div className={classNames(style.addiction_nav, isShow)} onClick={()=>{
+                    setIsShow(style.hidden)
+                  }}>
                     <ul>
                       {el.subelements.map((element, index) => {
                         return (
