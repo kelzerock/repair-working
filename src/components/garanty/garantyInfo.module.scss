@@ -1,0 +1,36 @@
+@import "@/styles/variables.scss";
+
+
+.block_info {
+  max-width: 1000px;
+  line-height: 1.75rem;
+  padding: 20px;
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 0 0 16px 0;
+  }
+
+  button {
+    color: #fff;
+    background: #2364af;
+    border-radius: 32px;
+    box-shadow: 0 4px 12px rgb(35 100 175 / 20%);
+    transition: background-color .3s;
+    padding: 10px 24px;
+
+    &:hover {
+      background-color: #003674;
+    }
+  }
+}
+
+
+@media screen and (max-width: $display-laptop) {}
+
+@media screen and (max-width: $display-mobile) {}

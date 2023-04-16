@@ -1,0 +1,68 @@
+{
+  "path": [
+    {
+      "namePage": "Ремонт",
+      "link": "/repair",
+      "subelements": [
+        {
+          "name": "Стиральные машины",
+          "subLink": "/washer"
+        },
+        {
+          "name": "Посудомоечные машины",
+          "subLink": "/dishwasher"
+        },
+        {
+          "name": "Варочные панели",
+          "subLink": "/hob"
+        },
+        {
+          "name": "Электроплиты",
+          "subLink": "/stove"
+        },
+        {
+          "name": "Духовные шкафы",
+          "subLink": "/oven"
+        },
+        {
+          "name": "Сушильные машины",
+          "subLink": "/dryer"
+        }
+      ]
+    },
+    {
+      "link": "/installation",
+      "namePage": "Установка",
+      "subelements": [
+        {
+          "name": "Стиральные машины",
+          "subLink": "/washer"
+        },
+        {
+          "name": "Посудомоечные машины",
+          "subLink": "/dishwasher"
+        }
+      ]
+    },
+    {
+      "link": "/price",
+      "namePage": "Цены"
+    },
+    {
+      "link": "/faq",
+      "namePage": "Вопрос-ответ"
+    },
+    {
+      "link": "/reviews",
+      "namePage": "Отзывы"
+    },
+    {
+      "link": "/garanty",
+      "namePage": "Гарантийный случай"
+    },
+    {
+      "link": "/contacts",
+      "namePage": "Контакты"
+    }
+  ]
+}
