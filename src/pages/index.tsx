@@ -40,7 +40,7 @@ const MainPage = () => {
       </div>
       <Benefits />
       <Reviews />
-      <Workflow />
+      <Workflow guaranty={false}/>
       <Discount />
     </div>
   );

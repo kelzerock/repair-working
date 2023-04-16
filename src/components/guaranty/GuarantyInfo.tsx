@@ -1,6 +1,6 @@
-import style from "./garantyInfo.module.scss";
+import style from "./guarantyInfo.module.scss";
 
-const GarantyInfo = () => {
+const GuarantyInfo = () => {
   return (
     <div className={style.block_info}>
       <h1>Гарантийный случай </h1>
@@ -20,4 +20,4 @@ const GarantyInfo = () => {
 };
 
 
-export default GarantyInfo;
+export default GuarantyInfo;

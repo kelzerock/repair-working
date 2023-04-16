@@ -1,4 +1,5 @@
-[
+{"casual": [
+
     {
         "image": "/images/workflow/icon_workflow_step1.svg",
         "text": "Вы оставляете заявку на ремонт"
@@ -15,4 +16,20 @@
         "image": "/images/workflow/icon_workflow_step4.svg",
         "text": "Мастер чинит поломку и даёт письменную гарантию от 6 мес. до 2 лет"
     }
+],
+"garanty": [
+
+    {
+        "image": "/images/workflow/icon_workflow_step1.svg",
+        "text": "Вы оставляете заявку на ремонт или звоните"
+    },
+    {
+        "image": "/images/workflow/icon_workflow_step2.svg",
+        "text": "Мастер находит вас в базе и перезванивает, чтобы уточнить проблему"
+    },
+    {
+        "image": "/images/workflow/icon_workflow_step4.svg",
+        "text": "Мастер приезжает, чинит поломку и даёт новую письменную гарантию на ремонт от 3 мес. до 2 лет"
+    }
 ]
+}
