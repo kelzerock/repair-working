@@ -54,8 +54,6 @@
                 list-style: none;
                 line-height: 1.55rem;
 
-
-
                 .list_li {
                     display: flex;
                     position: relative;
@@ -84,8 +82,6 @@
                     background-position: center right;
                     margin-right: 8px;
                 }
-
-
             }
 
             .list_ol {
@@ -131,9 +127,6 @@
                     }
                 }
             }
-
-
-
         }
     }
 }
@@ -149,7 +142,6 @@
                     margin: 0 auto 0 10px;
                 }
 
-
                 &:nth-of-type(5) {
                     .list_ul {
 
@@ -158,13 +150,6 @@
                             font-size: .8rem;
 
                         }
-                    }
-                }
-
-                .list_ul {
-                    .list_li {
-                        flex: 0 0 110px;
-                        font-size: .8rem;
                     }
                 }
             }
