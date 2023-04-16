@@ -7,10 +7,7 @@ import textWorkflow from '../../constants/json/workflow.json';
 
 export const Workflow = ({guaranty}:{guaranty:boolean}) => {
     const [isShowing, setIsShowing] = useState(false);
-    console.log(textWorkflow.casual)
-    console.log('test', guaranty)
     const arrForDraw = guaranty ? textWorkflow.garanty : textWorkflow.casual
-    console.log(arrForDraw)
 
     return (
         <div className={classNames(style.section, 'container')}>
