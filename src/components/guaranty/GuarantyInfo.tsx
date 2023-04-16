@@ -4,6 +4,7 @@ import style from "./guarantyInfo.module.scss";
 const GuarantyInfo = () => {
   return (
     <div className={style.block_info}>
+      <div className={style.info_text}>
       <h1>Гарантийный случай </h1>
       <p>
         Мы даём официальную гарантию на проведённый нашими мастерами ремонт и
@@ -16,6 +17,7 @@ const GuarantyInfo = () => {
         еще раз и бесплатно устранит проблему.
       </p>
       <button>У вас гарантий случай?</button>
+      </div>
       <Workflow guaranty={true} />
     </div>
   );
