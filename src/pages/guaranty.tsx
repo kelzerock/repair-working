@@ -6,7 +6,6 @@ const Guaranty = () => {
   return (
     <div className={style.block}>
       <GuarantyInfo />
-      <Workflow guaranty={true} />
     </div>
   );
 };

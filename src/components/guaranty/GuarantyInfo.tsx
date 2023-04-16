@@ -1,3 +1,4 @@
+import { Workflow } from "@/components/workflow";
 import style from "./guarantyInfo.module.scss";
 
 const GuarantyInfo = () => {
@@ -15,6 +16,7 @@ const GuarantyInfo = () => {
         еще раз и бесплатно устранит проблему.
       </p>
       <button>У вас гарантий случай?</button>
+      <Workflow guaranty={true} />
     </div>
   );
 };

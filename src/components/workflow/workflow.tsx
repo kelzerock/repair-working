@@ -32,6 +32,7 @@ export const Workflow = ({guaranty}:{guaranty:boolean}) => {
                     </li>
                 ))}
             </ul>
+            {guaranty? <button className={classNames(style.btn_guaranty, {[style.btn_hidden] : isShowing})}>Оставить заявку</button> : ""}
         </div>
     )
 }
