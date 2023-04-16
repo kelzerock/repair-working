@@ -1,5 +1,7 @@
+import { FAQ } from "@/components/faq";
+
 const FAQPage = () => {
-  return <div>Information about FAQ.</div>;
+  return <FAQ />;
 };
 
 export default FAQPage;

@@ -14,7 +14,7 @@ interface InfoBlock {
   info: InfoPosition[];
 }
 
-interface TextDataPrice {
+export interface TextDataPrice {
   data: InfoBlock[];
 }
 

@@ -107,9 +107,9 @@
   
         .main_info {}
   
-        .main_price,
-        .main_time,
-        .main_guaranty {}
+        .main_price {
+          flex: 1 1 40%
+        }
       }
   
     }
