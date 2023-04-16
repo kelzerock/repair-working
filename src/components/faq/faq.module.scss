@@ -6,34 +6,40 @@
     margin: 32px 0;
     flex-wrap: wrap;
     box-sizing: border-box;
+
     .wrapper {
         display: flex;
         background: $main-white;
         border-radius: 16px;
         flex-direction: column;
         border: 0.1px $main-lblue solid;
+
         .content {
             border-bottom: 0.1px $main-lblue solid;
             padding: 24px 32px;
             display: flex;
             flex-direction: column;
+
             .list_header {
                 display: flex;
                 width: 100%;
                 align-items: center;
                 cursor: pointer;
             }
+
             .title {
                 font-size: 1.25rem;
                 line-height: 1.75rem;
                 font-weight: 600;
                 margin: 0 auto 0 10px;
             }
+
             .list_ul {
                 p {
                     padding: 0;
                     margin: 0;
                 }
+
                 cursor: default;
                 padding-top: 16px;
                 display: flex;
@@ -44,20 +50,27 @@
                 width: 100%;
                 padding: 0;
                 flex-direction: column;
+                justify-content: center;
                 list-style: none;
                 line-height: 1.55rem;
+
+
+
                 .list_li {
                     display: flex;
                     position: relative;
                     padding-left: 20px;
                     flex-direction: column;
+
                     .img {
                         justify-self: center;
                     }
+
                     .list_title {
                         font-weight: 600;
                     }
                 }
+
                 .list_li::before {
                     content: "";
                     position: absolute;
@@ -71,12 +84,16 @@
                     background-position: center right;
                     margin-right: 8px;
                 }
+
+
             }
+
             .list_ol {
                 p {
                     padding: 0;
                     margin: 0;
                 }
+
                 cursor: default;
                 padding-top: 16px;
                 display: flex;
@@ -88,16 +105,35 @@
                 padding: 0;
                 flex-direction: column;
                 line-height: 1.55rem;
+
                 .list_ol_li {
                     margin-left: 20px;
                 }
             }
+
             .list_hidden {
                 max-height: 0;
                 transition: all 0.4s ease-out;
                 padding: 0;
                 margin: 0;
             }
+
+
+            &:nth-of-type(5) {
+                .list_ul {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+
+                    .list_li {
+                        flex: 0 1 200px;
+
+                    }
+                }
+            }
+
+
+
         }
     }
 }
@@ -111,6 +147,25 @@
                     line-height: 1.355rem;
                     font-weight: 700;
                     margin: 0 auto 0 10px;
+                }
+
+
+                &:nth-of-type(5) {
+                    .list_ul {
+
+                        .list_li {
+                            flex: 0 0 120px;
+                            font-size: .8rem;
+
+                        }
+                    }
+                }
+
+                .list_ul {
+                    .list_li {
+                        flex: 0 0 110px;
+                        font-size: .8rem;
+                    }
                 }
             }
         }
