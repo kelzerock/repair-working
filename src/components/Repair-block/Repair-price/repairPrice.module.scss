@@ -6,19 +6,34 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 20px;
-
+  border: 1px $main-lblue solid;
+  border-radius: 10px;
+  
   .list_header {
+    padding: 24px;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    border-bottom: 1px $main-lblue solid;
+    border-top: 1px $main-lblue solid;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   .title {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
     line-height: 2.125rem;
     font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
   }
 
   .list_ul {
@@ -29,13 +44,13 @@
     overflow: hidden;
     margin: 0 auto;
     width: 100%;
-    padding: 0;
+    padding: 0 34px;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    border: 0.1px $main-lblue solid;
+
     background: $main-white;
-    border-radius: 0 32px 0 32px;
+    border-radius: 0;
 
     .list_li {
       box-sizing: border-box;
@@ -52,9 +67,7 @@
         flex: 1 1 50%;
       }
 
-      .main_price,
-      .main_time,
-      .main_guaranty {
+      .main_price {
         flex: 1 1 16%
       }
     }
@@ -65,10 +78,93 @@
     max-height: 0;
     transition: all 0.4s ease-out;
   }
-}
 
+}
+.about_price {
+  font-style: italic;
+  margin-left: 50px;
+}
 
 @media screen and (max-width: $display-laptop) {
+
+  .section {
+    margin: 10px;
+    .list_header {
+  
+      &:first-child {
+
+      }
+  
+      &:last-child {
+
+      }
+    }
+  
+    .title {
+      font-size: 1.3rem;
+    }
+  
+    .list_ul {
+      padding: 0 20px;
+  
+      .list_li {
+
+  
+        .main_info {}
+  
+        .main_price {
+          flex: 1 1 40%
+        }
+      }
+  
+    }
+  
+    .list_hidden {}
+  }
+
+  .about_price {
+    margin-left: 30px;
+  }
 }
 
-@media screen and (max-width: $display-mobile) {}
+@media screen and (max-width: $display-mobile) {
+  .section {
+    margin: 5px;
+    .list_header {
+      padding: 10px;
+  
+      &:first-child {
+
+      }
+  
+      &:last-child {
+
+      }
+    }
+  
+    .title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  
+    .list_ul {
+      padding: 0 10px;
+  
+      .list_li {
+        
+        .main_info,
+        .main_price {
+
+          font-weight: 500;
+        }
+
+      }
+  
+    }
+  
+    .list_hidden {}
+  }
+  .about_price {
+    margin-left: 10px;
+  }
+}

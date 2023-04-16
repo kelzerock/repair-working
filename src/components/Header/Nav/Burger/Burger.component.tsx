@@ -1,4 +1,4 @@
-import { linkArr } from "@/constant/header-constant";
+import linkArr from "@/constants/json/path.json"
 import Link from "next/link";
 import { useState } from "react";
 
@@ -33,7 +33,7 @@ const Burger = () => {
       <div className={menu_class}>
         <nav className={nav_burger}>
           <ul>
-            {linkArr.map((el, index) => {
+            {linkArr.path.map((el, index) => {
               if (el.subelements) {
                 return (
                   <li key={index}>
@@ -43,7 +43,7 @@ const Burger = () => {
                         {el.subelements.map((elem, ind) => (
                           <li key={ind}>
                             <Link
-                              href={el.link + elem.path}
+                              href={el.link + elem.subLink}
                               className="header_link"
                               onClick={updateMenu}
                             >

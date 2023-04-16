@@ -26,7 +26,6 @@ export const Services = () => {
                         key={`service-head-${ind}`}
                         className={style.service_ul}
                         onClick={(e) => {
-                            console.log('click');
                             e.preventDefault();
                             e.stopPropagation();
                             setShowSpoiler(showSpoiler.map((element, i) => i === ind ? !element : element))

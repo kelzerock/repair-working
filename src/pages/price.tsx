@@ -2,10 +2,11 @@ import style from "./price.module.scss";
 import textServices from "@/constants/json/services.json";
 import Image from "next/image";
 import { useState } from "react";
-import priceListInfo from "@/constants/json/repaire-price-2.json";
+import priceListInfo from "@/constants/json/repaire-price.json";
 import classNames from "classnames";
+import RepairPrice from "@/components/Repair-block/Repair-price/RepairPrice.component";
 
-const x: any = priceListInfo;
+const ListPriceObject:any = priceListInfo;
 
 const PricePage = () => {
   const [isShowListPrice, setIsShowListPrice] = useState(false);
@@ -31,21 +32,9 @@ const PricePage = () => {
           </div>
         ))}
       </div>
-
-      <div className={style.price_list}>
-        <ul className={style.list_ul}>
           {filter
-            ? x[filter].map((el: any, ind: any) => (
-                <li key={`price-${ind}`} className={style.list_li}>
-                  <h4 className={style.main_info}>{el.description}</h4>
-                  <h4 className={style.main_price}>от {el.price} руб.</h4>
-                  <p className={style.main_time}>{el.time}</p>
-                  <p className={style.main_guaranty}>{el.guaranty}</p>
-                </li>
-              ))
+            ? <RepairPrice data={ListPriceObject[filter].data}/>
             : ""}
-        </ul>
-      </div>
     </div>
   );
 };

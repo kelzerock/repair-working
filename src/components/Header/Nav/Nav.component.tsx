@@ -1,13 +1,13 @@
 import Link from "next/link";
 import style from "./nav.module.scss";
-import { linkArr } from "@/constant/header-constant";
+import linkArr from "@/constants/json/path.json";
 import Image from "next/image";
 
 const Nav = () => {
   return (
     <nav className={style.nav}>
       <ul>
-        {linkArr.map((el, index) => {
+        {linkArr.path.map((el, index) => {
           if (el.subelements) {
             return (
               <li key={index}>
@@ -37,7 +37,7 @@ const Nav = () => {
                       {el.subelements.map((element, index) => {
                         return (
                           <li key={index}>
-                            <Link href={el.link + element.path}>
+                            <Link href={el.link + element.subLink}>
                               {element.name}
                             </Link>
                           </li>

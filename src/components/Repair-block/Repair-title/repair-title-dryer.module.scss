@@ -1,0 +1,27 @@
+@import '@/styles/variables.scss';
+
+.title {
+  padding: 20px;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    text-align: left;
+    letter-spacing: 1px;
+    margin: 0;
+    max-width: 1000px;
+    line-height: 1.5rem;
+  }
+
+  .click_form {
+    text-decoration: underline;
+    color: $main-blue;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

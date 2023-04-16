@@ -271,7 +271,7 @@
       "price": 130
     },
     {
-      "img": "public/images/repair/hob/sensor.png",
+      "img": "/images/repair/hob/sensor.png",
       "imgAlt": "hob",
       "title": "не работает сенсор",
       "info": ["Замена платы сенсора", "Замена термопредохранителя"],
