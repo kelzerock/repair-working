@@ -10,6 +10,7 @@ import { Workflow } from '@/components/workflow';
 import { Discount } from '@/components/discount';
 import Link from 'next/link';
 import Advertise from '@/components/advertise/advertise.component';
+import { FAQ } from '@/components/faq';
 
 const MainPage = () => {
 	return (
@@ -33,6 +34,7 @@ const MainPage = () => {
 			<Reviews />
 			<Workflow />
 			<Discount />
+			<FAQ />
 			{/* <Advertise /> */}
 		</div>
 	)
