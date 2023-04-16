@@ -1,0 +1,118 @@
+@import '../../styles/variables.scss';
+
+.section {
+    display: flex;
+    gap: 16px;
+    margin: 32px 0;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    .wrapper {
+        display: flex;
+        background: $main-white;
+        border-radius: 16px;
+        flex-direction: column;
+        border: 0.1px $main-lblue solid;
+        .content {
+            border-bottom: 0.1px $main-lblue solid;
+            padding: 24px 32px;
+            display: flex;
+            flex-direction: column;
+            .list_header {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                cursor: pointer;
+            }
+            .title {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+                font-weight: 600;
+                margin: 0 auto 0 10px;
+            }
+            .list_ul {
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+                cursor: default;
+                padding-top: 16px;
+                display: flex;
+                gap: 10px;
+                max-height: 1800px;
+                transition: all 0.4s ease-out;
+                overflow: hidden;
+                width: 100%;
+                padding: 0;
+                flex-direction: column;
+                list-style: none;
+                line-height: 1.55rem;
+                .list_li {
+                    display: flex;
+                    position: relative;
+                    padding-left: 20px;
+                    flex-direction: column;
+                    .img {
+                        justify-self: center;
+                    }
+                    .list_title {
+                        font-weight: 600;
+                    }
+                }
+                .list_li::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 3px;
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url('../../../public/images/faq/list_decor.svg');
+                    background-repeat: no-repeat;
+                    background-position: center right;
+                    margin-right: 8px;
+                }
+            }
+            .list_ol {
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+                cursor: default;
+                padding-top: 16px;
+                display: flex;
+                gap: 10px;
+                max-height: 1300px;
+                transition: all 0.4s ease-out;
+                overflow: hidden;
+                width: 100%;
+                padding: 0;
+                flex-direction: column;
+                line-height: 1.55rem;
+                .list_ol_li {
+                    margin-left: 20px;
+                }
+            }
+            .list_hidden {
+                max-height: 0;
+                transition: all 0.4s ease-out;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $display-mobile) {
+    .section {
+        .wrapper {
+            .content {
+                .title {
+                    font-size: 0.9rem;
+                    line-height: 1.355rem;
+                    font-weight: 700;
+                    margin: 0 auto 0 10px;
+                }
+            }
+        }
+    }
+}

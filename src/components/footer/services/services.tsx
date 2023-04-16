@@ -7,7 +7,6 @@ import iconSpoiler from '../../../../public/images/services/icon_spoiler_white.s
 
 export const Services = () => {
     const [showSpoiler, setShowSpoiler] = useState(Array(textInfo.services.length).fill(false));
-    console.log('showSpoiler', showSpoiler);
 
     return (
         <Fragment>
