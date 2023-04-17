@@ -4,17 +4,152 @@
   padding: 20px;
   text-align: justify;
 
+  b {
+    margin-right: 10px;
+  }
+
+  p {
+    margin: 0 0 8px;
+    line-height: 16px;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -32px;
+        top: 0;
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-image: url('/images/faq/list_decor.svg');
+        background-repeat: no-repeat;
+        background-position: center right;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .header {
+    font-size: 2rem;
+    margin: 0 0 24px;
+  }
+
+  .style.head_info {}
+
+  .head2 {
+    font-size: 1.8rem;
+  }
+
+  .info_price {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 0.1px #d3e8ed solid;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 16px;
+
+    .hat_table {
+      text-transform: uppercase;
+      display: flex;
+      justify-content: flex-end;
+      color: #898686;
+      text-align: right;
+      align-items: center;
+
+      .price_guaranty {
+        flex: 0 0 200px;
+      }
+    }
+
+    .price_element {
+      display: flex;
+      justify-content: flex-end;
+      font-weight: 600;
+
+      .price_title {
+        flex: 1 1 auto;
+      }
+
+      .price_title_price,
+      .price_title_guaranty {
+        flex: 0 0 200px;
+        text-align: right;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: $display-laptop) {
   .title {
-    padding: 10px;
+    padding: 20px 10px;
     font-size: .8rem;
+
+    .info_price {
+
+      .hat_table {
+
+        .price_guaranty {
+          flex: 0 0 100px;
+        }
+      }
+
+      .price_element {
+
+        .price_title {}
+
+        .price_title_price,
+        .price_title_guaranty {
+          flex: 0 0 100px;
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: $display-mobile) {
   .title {
-    padding: 5px;
+    padding: 20px 5px;
+
+    p {
+      font-size: 16px;
+    }
+
+    .header {
+      font-size: 1.4rem;
+
+
+      .style.head_info {}
+    }
+
+    .info_price {
+      padding: 10px 10px;
+
+      .hat_table {
+
+        .price_guaranty {
+          display: none;
+        }
+      }
+
+      .price_element {
+        .price_title {}
+
+        .price_title_price {
+          flex: 0 0 70px;
+        }
+        .price_title_guaranty {
+          display: none;
+        }
+      }
+    }
   }
 }

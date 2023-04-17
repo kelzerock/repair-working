@@ -26,9 +26,11 @@ export const Services = () => {
                         key={`service-head-${ind}`}
                         className={style.service_ul}
                         onClick={(e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            setShowSpoiler(showSpoiler.map((element, i) => i === ind ? !element : element))
+                            if((e.target as HTMLElement).classList.contains(style.service_name)) {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                setShowSpoiler(showSpoiler.map((element, i) => i === ind ? !element : element))
+                            }
                         }}
                     >
                         <p className={style.service_name}>

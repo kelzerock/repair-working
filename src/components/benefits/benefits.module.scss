@@ -86,9 +86,17 @@
                 grid-template-rows: repeat(2, auto);
                 width: calc(100%);
                 text-align: left;
-                column-gap: 20px;
+                column-gap: 10px;
+                padding: 12px 24px;
+
+                h4, p {
+                    margin: 0;
+                    font-size: .88rem;
+                }
             }
             .img {
+                width: 50px;
+                height: auto;
                 grid-row-start: 1;
                 grid-row-end: 3;
             }

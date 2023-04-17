@@ -8,6 +8,7 @@ import classNames from "classnames";
 const Nav = () => {
 
   const [isShow, setIsShow] = useState('')
+  const resetStateShow = () => setIsShow('')
 
   return (
     <nav className={style.nav}>
@@ -39,6 +40,10 @@ const Nav = () => {
 
                   <div className={classNames(style.addiction_nav, isShow)} onClick={()=>{
                     setIsShow(style.hidden)
+                    setTimeout(() => {
+                      resetStateShow()
+                      
+                    }, 0);
                   }}>
                     <ul>
                       {el.subelements.map((element, index) => {

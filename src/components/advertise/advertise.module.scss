@@ -65,4 +65,19 @@
   }
 }
 
-@media screen and (max-width: $display-mobile) {}
+@media screen and (max-width: $display-mobile) {
+  .block {
+    .wrapper {
+
+      .block_img {
+
+      }
+      .block_info {
+        .info_phone {
+
+          width: 165px;
+        }
+      }
+    }
+  }
+}

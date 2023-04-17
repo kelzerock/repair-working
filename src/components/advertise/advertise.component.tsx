@@ -14,7 +14,7 @@ const Advertise = () => {
         <div className={style.block_info}>
           <h2>Звоните прямо сейчас</h2>
           <h4>Ответим на все вопросы по телефонам</h4>
-          <h4>{aboutFirm.phone[0]} или {aboutFirm.phone[1]}</h4>
+          <h4 className={style.info_phone}>{aboutFirm.phone[0]} или {aboutFirm.phone[1]}</h4>
           <Button className="btn-yellow" text="Перезвоните мне"/>
         </div>
 

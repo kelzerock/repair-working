@@ -33,7 +33,14 @@ export const Modal = ({isShowingModal, setIsShowingModal}: ModalPropsType) => {
     const {unlockScroll} = useScrollLock();
 
     const submitHandler = () => {
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ TITLE: modalText })
+        }
 
+        fetch(`https://b24-jk9jbm.bitrix24.by/rest/1/pv44ctw5ojrpgsrl/crm.lead.add.json?`,
+            requestOptions)
     }
 
     const closeHandler = useCallback(() => {
