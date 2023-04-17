@@ -1,26 +1,30 @@
 @import "../styles/variables.scss";
 
 .section {
-    background: $main-lgray;
     padding: 64px 0;
 }
+
 .wrapper {
     background: center / cover no-repeat url('/images/fridge-1280.png');
+
     .section__header {
         text-transform: uppercase;
         font-size: 2rem;
         line-height: 2.75rem;
         max-width: 484px;
     }
+
     .section__title {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 1.25rem;
         line-height: 1.75rem;
     }
+
     .section__description {
         max-width: 484px;
     }
+
     .section__services {
         display: flex;
         flex-wrap: wrap;
@@ -28,6 +32,7 @@
         justify-content: center;
         gap: 20px;
     }
+
     .section__btn {
         width: calc(100% / 3 - 32px);
         font-size: 1.25rem;
@@ -41,17 +46,19 @@
         border: none;
         font-weight: 500;
         border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(35,100,175,0.2);
+        box-shadow: 0 4px 12px rgba(35, 100, 175, 0.2);
         background-color: #fff;
         color: #2364af;
         cursor: pointer;
+
         span {
             margin: 0 auto 0 10px;
         }
     }
+
     .section__btn:hover {
         color: #003674;
-        box-shadow: 0 8px 24px rgba(35,100,175,0.4);
+        box-shadow: 0 8px 24px rgba(35, 100, 175, 0.4);
     }
 }
 
@@ -62,10 +69,44 @@
         }
     }
 }
+
 @media screen and (max-width: $display-mobile) {
     .section {
+        padding: 54px 0;
         .section__btn {
             width: 100%;
+        }
+    }
+
+    .wrapper {
+        .section__header {
+            margin: 0 0 10px;
+            font-size: 1.8rem;
+        }
+
+        .section__title {
+
+        }
+    
+        .section__description {
+
+        }
+    
+        .section__services {
+            gap: 10px;
+        }
+    
+        .section__btn {
+            width: 85%;
+            font-size: 1rem;
+            line-height: 1.4rem;
+            span {
+            
+            }
+        }
+    
+        .section__btn:hover {
+            
         }
     }
 }

@@ -22,6 +22,7 @@
 
             .list_header {
                 display: flex;
+                gap: 3px;
                 width: 100%;
                 align-items: center;
                 cursor: pointer;
@@ -135,6 +136,8 @@
     .section {
         .wrapper {
             .content {
+                padding: 15px 20px;
+
                 .title {
                     font-size: 0.9rem;
                     line-height: 1.355rem;
