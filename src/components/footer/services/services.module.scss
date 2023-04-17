@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 75%;
+    justify-content: space-around;
     
     .service_ul {
         list-style: none;
@@ -24,6 +25,7 @@
 }
 
 @media screen and (max-width: $display-laptop) {
+    
     .service_mobile {
         display: flex;
     }

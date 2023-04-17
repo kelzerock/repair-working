@@ -34,26 +34,28 @@
         {
             "name": "Ремонт",
             "list": [
-                {"name": "Стиральные машины", "link": "/washer"},
-                {"name": "Посудомоечные машины", "link": "/dishwasher"},
-                {"name": "Варочные панели", "link": "/hob"},
-                {"name": "Электроплиты", "link": "/stove"},
-                {"name": "Духовые шкафы", "link": "/oven"},
-                {"name": "Сушильные машины", "link": "/dryer"}
+                {"name": "Стиральные машины", "link": "/repair/washer"},
+                {"name": "Посудомоечные машины", "link": "/repair/dishwasher"},
+                {"name": "Варочные панели", "link": "/repair/hob"},
+                {"name": "Электроплиты", "link": "/repair/stove"},
+                {"name": "Духовые шкафы", "link": "/repair/oven"},
+                {"name": "Сушильные машины", "link": "/repair/dryer"}
             ]
         },
         {
             "name": "Установка",
             "list": [
-                {"name": "Стиральные машины", "link": "/washer"},
-                {"name": "Посудомоечные машины", "link": "/dishwasher"}
+                {"name": "Стиральные машины", "link": "/installation/washer"},
+                {"name": "Посудомоечные машины", "link": "/installation/dishwasher"}
             ]
         },
         {
             "name": "Информация",
             "list": [
                 {"name": "Цены", "link": "/price"},
+                {"name": "Вопрос-ответ", "link": "/faq"},
                 {"name": "Отзывы", "link": "/reviews"},
+                {"name": "Гарантийный случай", "link": "/guaranty"},
                 {"name": "Контакты", "link": "/contacts"}
             ]
         }

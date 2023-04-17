@@ -33,3 +33,34 @@
     }
   }
 }
+
+@media screen and (max-width: $display-laptop) {
+
+}
+@media screen and (max-width: $display-mobile) {
+  .block {
+
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    p {
+      font-size: .9rem;
+    }
+  
+    ul {
+      list-style-type: none;
+      li {
+        font-size: .9rem;
+        position: relative;
+  
+        &::before {
+          left: -25px;
+          top: 1px;
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+}

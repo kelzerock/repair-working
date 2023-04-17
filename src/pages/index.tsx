@@ -17,7 +17,7 @@ const MainPage = () => {
     <div className={style.section}>
       <div className={classNames(style.wrapper, "container")}>
         <h2 className={style.section__header}>{textInfo.header}</h2>
-        <h3 className={style.section__title}>{textInfo.title}</h3>
+        <h5 className={style.section__title}>{textInfo.title}</h5>
         <p className={style.section__description}>{textInfo.description}</p>
         <div className={style.section__services}>
           {textServices.services[0].list.map((el, ind) => (
