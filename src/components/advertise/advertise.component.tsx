@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Button from '../Button/Button.component';
 import style from './advertise.module.scss'
+import aboutFirm from '@/constants/json/about-firm.json'
 
 const Advertise = () => {
   return (
@@ -13,7 +14,7 @@ const Advertise = () => {
         <div className={style.block_info}>
           <h2>Звоните прямо сейчас</h2>
           <h4>Ответим на все вопросы по телефонам</h4>
-          <h4>+22222 или +22222</h4>
+          <h4>{aboutFirm.phone[0]} или {aboutFirm.phone[1]}</h4>
           <Button className="btn-yellow" text="Перезвоните мне"/>
         </div>
 

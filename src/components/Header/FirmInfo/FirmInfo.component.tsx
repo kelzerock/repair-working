@@ -1,8 +1,9 @@
 import style from "./firmInfo.module.scss";
 import Image from "next/image";
+import aboutFirm from '@/constants/json/about-firm.json'
 
 const info: string[] = [
-  "с 10:00 до 22:00 без выходных",
+  `с ${aboutFirm.time.start} до ${aboutFirm.time.end} без выходных`,
   "Бесплатная диагностика",
   "Гарантия до 2 лет",
 ];
