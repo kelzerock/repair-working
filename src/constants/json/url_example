@@ -1,0 +1,6 @@
+{
+  "call": "https://b24-jk9jbm.bitrix24.by/rest/1/pv44ctw5ojrpgsrl/crm.lead.add.json?NAME=Новый лид&TEL=4324423&TITLE=сообщение",
+  "guaranty": "https://b24-jk9jbm.bitrix24.by/rest/1/3ev1w1d4xb97l4rm/crm.lead.add.json?TITLE=Новый лид&NAME=Иван&ADRESS=WORK&PHONE=555888&INFO=WORK",
+  "request": "https://b24-jk9jbm.bitrix24.by/rest/1/3dawvz70kvo4nqvb/crm.lead.add.json?TITLE=Новый лид&NAME=Иван&ADRESS=Петров&PHONE=mail@example.com&INFO=WORK",
+  "review": "https://b24-jk9jbm.bitrix24.by/rest/1/fxjwatg7ngyo314w/crm.lead.add.json?TITLE=Новый лид&NAME=Иван&MESSAGE=сообщение"
+}

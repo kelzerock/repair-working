@@ -1,50 +1,80 @@
-import linkArr from "@/constants/json/path.json"
+import linkArr from "@/constants/json/path.json";
+import classNames from "classnames";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import style from "./burger.module.scss";
 
 const Burger = () => {
-  const [burger_class, setBurgerClass] = useState("burger_bar unclicked");
-  const [menu_class, setMenuClass] = useState("menu hidden");
+  const [burger_class, setBurgerClass] = useState(
+    classNames(style.burger_bar, style.unclicked)
+  );
+  const [menu_class, setMenuClass] = useState(
+    classNames(style.menu, style.hidden)
+  );
   const [isMenuClicked, setIsMenuClicked] = useState(false);
-  const [nav_burger, setNavBurger] = useState("nav_burger hidden");
+  const [nav_burger, setNavBurger] = useState(
+    classNames(style.nav_burger, style.hidden)
+  );
+  const [showSpoiler, setShowSpoiler] = useState(Array(5).fill(true));
 
   const updateMenu = () => {
     if (!isMenuClicked) {
-      setBurgerClass("burger_bar clicked");
-      setMenuClass("menu visible");
-      setNavBurger("nav_burger visible");
+      setBurgerClass(classNames(style.burger_bar, style.clicked));
+      setMenuClass(classNames(style.menu, style.visible));
+      setNavBurger(classNames(style.nav_burger, style.visible));
     } else {
-      setBurgerClass("burger_bar unclicked");
-      setMenuClass("menu hidden");
-      setNavBurger("nav_burger hidden");
+      setBurgerClass(classNames(style.burger_bar, style.unclicked));
+      setMenuClass(classNames(style.menu, style.hidden));
+      setNavBurger(classNames(style.nav_burger, style.hidden));
     }
     setIsMenuClicked(!isMenuClicked);
   };
 
   return (
     <>
-      <div className="burger_menu" onClick={updateMenu}>
+      <div className={style.burger_menu} onClick={updateMenu}>
         <div className={burger_class}></div>
         <div className={burger_class}></div>
         <div className={burger_class}></div>
       </div>
 
       <div className={menu_class}>
-        <nav className={nav_burger}>
-          <ul>
+        <nav className={classNames(nav_burger)}>
+          <ul className={style.first_ul}>
             {linkArr.path.map((el, index) => {
               if (el.subelements) {
                 return (
-                  <li key={index}>
-                    <div className="sub_nav">
-                       <span>{el.namePage}</span>
-                      <ul>
+                  <li key={index} className={style.list_elem}>
+                    <div
+                      className={style.sub_nav}
+                      onClick={() => {
+                        let newData = showSpoiler.map((element, i) => {
+                          if (i === index) {
+                            console.log("test");
+                            return !element;
+                          } else {
+                            return element;
+                          }
+                        });
+                        setShowSpoiler(newData);
+                      }}
+                    >
+                      <span className={style.sub_header}>{el.namePage}
+                      
+                      <Image className={style.img} src="/images/header/small-arrow-black.svg" alt="arrow" width={10} height={10} />
+                      </span>
+                      <ul
+                        className={classNames(
+                          style.sub_nav_list,
+                          showSpoiler[index] ? style.sub_hidden : ""
+                        )}
+                      >
                         {el.subelements.map((elem, ind) => (
                           <li key={ind}>
                             <Link
                               href={el.link + elem.subLink}
-                              className="header_link"
+                              className={style.header_link}
                               onClick={updateMenu}
                             >
                               {elem.name}
@@ -57,8 +87,12 @@ const Burger = () => {
                 );
               } else {
                 return (
-                  <li key={index}>
-                    <Link href={el.link} onClick={updateMenu}>
+                  <li key={index} className={style.list_elem}>
+                    <Link
+                      href={el.link}
+                      onClick={updateMenu}
+                      className={style.header_link}
+                    >
                       {el.namePage}
                     </Link>
                   </li>
