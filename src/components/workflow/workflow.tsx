@@ -4,9 +4,11 @@ import Image from 'next/image';
 import style from './workflow.module.scss';
 import iconSpoiler from '../../../public/images/services/icon_spoiler_blue.svg';
 import textWorkflow from '../../constants/json/workflow.json';
+import { Modal } from '../modal';
 
 export const Workflow = ({guaranty}:{guaranty:boolean}) => {
     const [isShowing, setIsShowing] = useState(false);
+    const [isShowingModal, setIsShowingModal] = useState(false);
     const arrForDraw = guaranty ? textWorkflow.garanty : textWorkflow.casual
 
     return (
@@ -29,7 +31,17 @@ export const Workflow = ({guaranty}:{guaranty:boolean}) => {
                     </li>
                 ))}
             </ul>
-            {guaranty? <button className={classNames(style.btn_guaranty, {[style.btn_hidden] : isShowing})}>Оставить заявку</button> : ""}
+            {guaranty &&
+                <button
+                    className={classNames(style.btn_guaranty, {[style.btn_hidden] : isShowing})}
+                    onClick={e => {
+                        e.preventDefault(); 
+                        e.stopPropagation();
+                        setIsShowingModal(!isShowingModal);
+                    }}
+                >Оставить заявку</button>
+            }
+            {isShowingModal && <Modal isShowingModal={isShowingModal} setIsShowingModal={setIsShowingModal} typeOfModal='warranty'/>}
         </div>
     )
 }

@@ -18,7 +18,7 @@ const ReviewPage = () => {
 
 	return (
 		<div className={classNames(style.section, 'container')}>
-			{isShowingModal && <Modal isShowingModal={isShowingModal} setIsShowingModal={setIsShowingModal} />}
+			{isShowingModal && <Modal isShowingModal={isShowingModal} setIsShowingModal={setIsShowingModal} typeOfModal='review'/>}
 			<div className={style.crumbs_wrapper}>
 				<Link href={'/'}>Главная</Link>
 				<Image src={iconCrumbs} alt='crumbs' className={style.crumbs_icon}/>
