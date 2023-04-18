@@ -11,11 +11,10 @@
   box-shadow: 0 4px 12px rgb(249 157 21 / 30%);
   border-radius: 32px;
   border: none;
-  text-transform: capitalize;
-  // transition: background .3s;
+  transition: background .3s ease;
 
   &:hover {
-    background: linear-gradient(90deg, #f96715 0%, #f98315 51.56%, #f96715 100%);
+    background: #f96715;
     cursor: pointer;
   }
 }

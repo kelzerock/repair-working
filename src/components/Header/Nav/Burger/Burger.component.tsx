@@ -1,5 +1,6 @@
 import linkArr from "@/constants/json/path.json";
 import classNames from "classnames";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import style from "./burger.module.scss";
@@ -21,11 +22,11 @@ const Burger = () => {
     if (!isMenuClicked) {
       setBurgerClass(classNames(style.burger_bar, style.clicked));
       setMenuClass(classNames(style.menu, style.visible));
-      // setNavBurger(classNames(style.nav_burger, style.visible));
+      setNavBurger(classNames(style.nav_burger, style.visible));
     } else {
       setBurgerClass(classNames(style.burger_bar, style.unclicked));
       setMenuClass(classNames(style.menu, style.hidden));
-      // setNavBurger(classNames(style.nav_burger, style.hidden));
+      setNavBurger(classNames(style.nav_burger, style.hidden));
     }
     setIsMenuClicked(!isMenuClicked);
   };
@@ -39,7 +40,7 @@ const Burger = () => {
       </div>
 
       <div className={menu_class}>
-        <nav className={style.nav_burger}>
+        <nav className={classNames(nav_burger)}>
           <ul className={style.first_ul}>
             {linkArr.path.map((el, index) => {
               if (el.subelements) {
@@ -50,21 +51,23 @@ const Burger = () => {
                       onClick={() => {
                         let newData = showSpoiler.map((element, i) => {
                           if (i === index) {
-                            console.log('test')
+                            console.log("test");
                             return !element;
                           } else {
                             return element;
                           }
                         });
-                        console.log(showSpoiler);
                         setShowSpoiler(newData);
                       }}
                     >
-                      <span className={style.sub_header}>{el.namePage}</span>
+                      <span className={style.sub_header}>{el.namePage}
+                      
+                      <Image className={style.img} src="/images/header/small-arrow-black.svg" alt="arrow" width={10} height={10} />
+                      </span>
                       <ul
                         className={classNames(
                           style.sub_nav_list,
-                          showSpoiler[index]? style.sub_hidden : ""
+                          showSpoiler[index] ? style.sub_hidden : ""
                         )}
                       >
                         {el.subelements.map((elem, ind) => (
