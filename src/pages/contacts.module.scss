@@ -32,6 +32,14 @@
       }
     }
   }
+
+  .online_request {
+    color: $main-blue;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 @media screen and (max-width: $display-laptop) {
