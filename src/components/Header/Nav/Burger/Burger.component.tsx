@@ -62,7 +62,10 @@ const Burger = () => {
                     >
                       <span className={style.sub_header}>{el.namePage}
                       
-                      <Image className={classNames(style.img, showSpoiler[index] ? style.rotateImg : "")} src="/images/header/small-arrow-black.svg" alt="arrow" width={10} height={10} />
+                      <Image className={classNames(
+                        style.img, 
+                        !showSpoiler[index] ? style.rotateImg : ""
+                        )} src="/images/header/small-arrow-black.svg" alt="arrow" width={10} height={10} />
                       </span>
                       <ul
                         className={classNames(
