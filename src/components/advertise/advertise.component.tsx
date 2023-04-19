@@ -13,7 +13,7 @@ const Advertise = () => {
         <Modal
           isShowingModal={isShowingModal}
           setIsShowingModal={setIsShowingModal}
-          typeOfModal="call"
+          typeOfModal="request"
         />
       )}
       <div className={style.wrapper}>
@@ -39,7 +39,7 @@ const Advertise = () => {
           <h2>Звоните прямо сейчас</h2>
           <h4>Ответим на все вопросы по телефонам</h4>
           <h4 className={style.info_phone}>
-            {aboutFirm.phone[0]} или {aboutFirm.phone[1]}
+            {aboutFirm.phoneImg[0]} или {aboutFirm.phoneImg[1]}
           </h4>
           <button
             className="btn-yellow"

@@ -6,6 +6,7 @@ import phoneIcon from '../../assets/svg/ringing-phone-outline-icon.svg';
 import emailIcon from '../../assets/svg/email-icon.svg';
 import locationIcon from '../../assets/svg/map-pin-point-icon.svg';
 import { Services } from './services';
+import textAboutFirm from '@/constants/json/about-firm.json'
 
 export const Footer = () => (
     <footer className={style.footer}>
@@ -30,7 +31,7 @@ export const Footer = () => (
                     <div className={style.contacts_container}>
                         <Image src={phoneIcon} alt='phone number' height={24} width={24} className={style.icon}/>
                         <div className={style.phones}>
-                            {textInfo.contacts.phone.map((el, ind) => <p key={ind}>{el}</p>)}
+                            {textAboutFirm.phoneImg.map((el, ind) => <p key={ind}>{el}</p>)}
                         </div>
                     </div>
                     <div className={style.contacts_container}>

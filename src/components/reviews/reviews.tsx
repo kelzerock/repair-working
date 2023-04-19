@@ -3,10 +3,21 @@ import style from "./reviews.module.scss";
 import textReview from "../../constants/json/reviews.json";
 import { ReviewCard } from "./review-card";
 import Link from "next/link";
+import { useState } from "react";
+import { Modal } from "../modal";
 
 export const Reviews = () => {
+  const [isShowingModal, setIsShowingModal] = useState(false);
+  
   return (
     <div className={classNames(style.section, "container")}>
+       {isShowingModal && (
+        <Modal
+          isShowingModal={isShowingModal}
+          setIsShowingModal={setIsShowingModal}
+          typeOfModal="review"
+        />
+      )}
       {/* <h4 className={style.title}>Новые отзывы</h4> */}
       <div className={style.wrapper}>
         <div className={style.score_wrapper}>
@@ -17,7 +28,13 @@ export const Reviews = () => {
         </div>
         <div className={style.feedback_wrapper}>
           <Link href={"#"} className={classNames("link", style.link_btn)}>
-            <button className={style.btn}>Отправить отзыв</button>
+            <button className={style.btn}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setIsShowingModal(!isShowingModal);
+            }}
+            >Отправить отзыв</button>
           </Link>
           <Link
             href={"/reviews"}
