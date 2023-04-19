@@ -23,8 +23,8 @@ const ContactPage = () => {
       </p>
       <p>Обращайтесь по нашим телефонам:</p>
       <ul>
-        <li>{infoAboutFirm.phone[0]}</li>
-        <li>{infoAboutFirm.phone[1]}</li>
+        <li>{infoAboutFirm.phoneImg[0]}</li>
+        <li>{infoAboutFirm.phoneImg[1]}</li>
       </ul>
       <p>
         Прием заявок на ремонт/установку принимается с{" "}

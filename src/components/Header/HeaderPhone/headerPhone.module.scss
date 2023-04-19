@@ -3,10 +3,11 @@
 .header_phone {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  flex: 0 0 400px;
 
   a {
-    font-size: .9rem;
-    font-weight: 500;
+    width: 100%;
     text-decoration: none;
     color: $main-lblack;
     margin: 0 10px;
@@ -14,6 +15,21 @@
     text-decoration-color: $main-blue;
     text-decoration-style: dashed;
     transition: color .3s;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 3px;
+    
+    span {
+      font-size: .9rem;
+      font-weight: 500;
+
+    }
+
+    .phone_img {
+      width: auto;
+      height: 15px;
+    }
 
     &:hover {
       color: $main-blue;
@@ -29,7 +45,7 @@
 
 @media screen and (max-width: 1260px) {
   .header_phone {
-    flex: 1 1 auto;
+    flex: 1 1 180px;
     justify-content: flex-end;
     flex-direction: column;
     row-gap: 10px;
@@ -41,7 +57,7 @@
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .header_phone {
     display: flex;
     align-items: flex-start;
