@@ -21,7 +21,13 @@
 
 @media screen and (max-width: 700px) {
   .btn-yellow {
-    margin: 2px 5px;
+    margin: 0;
+    padding: 4px 12px;
+    font-size: .7rem;
+  }
+
+  button {
+    padding: 4px 12px;
     font-size: .7rem;
   }
 }

@@ -35,10 +35,11 @@
   .header_wrapper {
     .header {
       height: 110px;
-      padding-left: 10;
-      padding-right: 10px;
+      padding: 0 10px 10px;
       flex-wrap: wrap;
       justify-content: space-between;
+      align-content: flex-end;
+      row-gap: 15px;
     }
   }
 }

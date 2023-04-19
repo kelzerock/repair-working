@@ -6,14 +6,14 @@ const HeaderPhone = () => {
   return (
     <div className={style.header_phone}>
           <a href={`tel:${aboutFirm.phone[0]}`}>
-            {aboutFirm.phone[0]}
+            {aboutFirm.phoneImg[0]}
           </a>
           <a href={`tel:${aboutFirm.phone[1]}`}>
-            {aboutFirm.phone[1]}
+            {aboutFirm.phoneImg[1]}
           </a>
   
-      <a href="tel:{phoneNumber[0]}">
-        <Image src="/phone-call.svg" alt="phone call" width={40} height={40} />
+      <a href={`tel:${aboutFirm.phone[0]}`}>
+        <Image src="/phone-call.svg" alt="phone call" width={30} height={30} sizes="100vw"/>
       </a>
     </div>
   );
