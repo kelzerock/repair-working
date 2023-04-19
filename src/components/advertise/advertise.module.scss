@@ -2,7 +2,7 @@
 
 .block {
   width: 100%;
-  height: 290px;
+  height: 240px;
   position: relative;
   background-color: $main-dgray;
 
@@ -73,9 +73,12 @@
 
       }
       .block_info {
+        h2, h4 {
+          margin: 10px 0;
+        }
         .info_phone {
 
-          width: 165px;
+          width: 190px;
         }
       }
     }

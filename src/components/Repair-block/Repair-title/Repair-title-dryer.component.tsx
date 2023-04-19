@@ -1,10 +1,20 @@
 import style from "./repair-title-dryer.module.scss";
 import textData from "@/constants/json/repaire.json";
+import { useState } from "react";
+import { Modal } from "@/components/modal";
 
 const RepairTitleDryer = () => {
+  const [isShowingModal, setIsShowingModal] = useState(false);
   const { title, info, image, imageAlt } = textData["title-block"].dryer;
   return (
     <div className={style.title}>
+       {isShowingModal && (
+        <Modal
+          isShowingModal={isShowingModal}
+          setIsShowingModal={setIsShowingModal}
+          typeOfModal="request"
+        />
+      )}
       <h2>РЕМОНТ СУШИЛЬНЫХ МАШИН</h2>
       <p>
         Компания «РемТехСервис» — «скорая помощь» для сушильных машин в Минске и Минском районе!
@@ -31,7 +41,14 @@ const RepairTitleDryer = () => {
             <p>
               <b>Ремонт в день вызова, если заявка подана до обеда.</b> По
               вечерней заявке мастер приедет на следующий день. Хотите выбрать
-              другую дату? Назовите её диспетчеру или напишите в <span className={style.click_form}>форме заказа</span>.
+              другую дату? Назовите её диспетчеру или напишите в <span className={style.click_form
+              }
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                setIsShowingModal(!isShowingModal);
+              }}
+              >форме заказа</span>.
             </p>
           </li>
           <li>
