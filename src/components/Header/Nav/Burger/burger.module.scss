@@ -1,5 +1,9 @@
 @import '../../../../styles/variables.scss';
 
+.menu {
+  display: none;
+}
+
 .nav_burger {
   position: relative;
   width: 100%;
@@ -190,7 +194,7 @@
 
 
   .menu {
-    // width: calc(100% + 42px);
+    display: inherit;
     height: 100vh;
     background: rgb(34, 117, 195);
     background: linear-gradient(0deg, rgba(34, 117, 195, 1) 0%, rgba(45, 138, 253, 1) 100%);
@@ -198,15 +202,16 @@
     top: 0;
     left: -21px;
     z-index: 4;
-    transition: transform .3s;
-
+    
     &.hidden {
-
+      
+      // transition: transform .3s;
       transform: translateX(100%);
       width: calc(100% + 42px);
     }
-
+    
     &.visible {
+      // transition: transform .3s;
       transform: translateX(0);
       width: calc(100% + 42px);
     }
