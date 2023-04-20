@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { useState } from "react";
 import Button from "../Button/Button.component";
 import { Modal } from "../modal";
@@ -21,7 +22,7 @@ const Header = () => {
           <HeaderPhone />
           <Nav />
           <button
-            className="btn-yellow"
+            className={classNames("btn-yellow", style.header_btn)}
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
