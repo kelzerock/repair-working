@@ -15,11 +15,11 @@ const DryerPage = () => {
     <>
       <RepairTitleDryer />
       <Benefits />
+      <RepairBreak filter={textBreak.dryer.header} />
       <RepairCalculating />
       <RepairInfo />
       <RepairPrice data={textDataPrice.dryer.data}/>
       <Reviews />
-      <RepairBreak filter={textBreak.dryer.header} />
     </>
   );
 };

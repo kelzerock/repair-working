@@ -63,6 +63,10 @@
       justify-content: space-between;
       width: 100%;
 
+      &:nth-of-type(even){
+        background-color: #f4f5f9;
+      }
+
       .main_info {
         flex: 1 1 50%;
       }
@@ -151,11 +155,11 @@
       padding: 0 10px;
   
       .list_li {
-        
+
         .main_info,
         .main_price {
-
-          font-weight: 500;
+          font-size: 14px;
+          font-weight: 600;
         }
 
       }

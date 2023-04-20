@@ -15,11 +15,11 @@ const OvenPage = () => {
     <>
       <RepairTitle data={textData["title-block"].oven} />
       <Benefits />
+      <RepairBreak filter={textBreak.oven.header} />
       <RepairCalculating />
       <RepairInfo />
       <RepairPrice data={textDataPrice.oven.data}/>
       <Reviews />
-      <RepairBreak filter={textBreak.oven.header} />
     </>
   );
 };

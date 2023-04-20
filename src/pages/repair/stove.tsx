@@ -14,11 +14,11 @@ const StovePage = () => {
     <>
       <RepairTitle data={textData["title-block"].stove} />
       <Benefits />
+      <RepairBreak filter={textBreak.stove.header} />
       <RepairCalculating />
       <RepairInfo />
       <RepairPrice data={textDataPrice.stove.data}/>
       <Reviews />
-      <RepairBreak filter={textBreak.stove.header} />
     </>
   );
 };

@@ -14,11 +14,11 @@ const HobPage = () => {
     <>
       <RepairTitle data={textData["title-block"].hob} />
       <Benefits />
+      <RepairBreak filter={textBreak.hob.header} />
       <RepairCalculating />
       <RepairInfo />
       <RepairPrice data={textDataPrice.hob.data}/>
       <Reviews />
-      <RepairBreak filter={textBreak.hob.header} />
     </>
   );
 };
