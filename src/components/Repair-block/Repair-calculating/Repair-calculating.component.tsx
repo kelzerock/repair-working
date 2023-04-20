@@ -38,7 +38,7 @@ const RepairCalculating = () => {
               setIsShowingModal(!isShowingModal);
             }}
           >
-            рассчитать ремонт
+            Рассчитать ремонт
           </button>
         </div>
       </div>

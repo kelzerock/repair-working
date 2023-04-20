@@ -14,11 +14,11 @@ const DishwasherPage = () => {
     <>
       <RepairTitle data={textData["title-block"].dishwasher} />
       <Benefits />
+      <RepairBreak filter={textBreak.dishwasher.header} />
       <RepairCalculating />
       <RepairInfo />
       <RepairPrice data={textDataPrice.dishwasher.data}/>
       <Reviews />
-      <RepairBreak filter={textBreak.dishwasher.header} />
     </>
   );
 };

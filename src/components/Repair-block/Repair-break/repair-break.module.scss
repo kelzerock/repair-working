@@ -19,7 +19,7 @@
       flex: 0 0 325px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
       transition: box-shadow .3s;
       box-shadow: 0px 0px 25px 1px rgba(34, 60, 80, 0.3);
@@ -29,6 +29,11 @@
 
       &:hover {
         box-shadow: 0px 0px 25px 10px rgba(34, 60, 80, 0.62);
+      }
+
+      .break_btn {
+        padding: 5px 30px;
+        align-self: center;
       }
 
       .li_info {

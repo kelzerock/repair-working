@@ -1,3 +1,6 @@
+@import '@/styles/variables.scss';
+
+
 .header_firm_info {
   list-style-type: none;
   display: flex;
@@ -25,27 +28,37 @@
 
 @media screen and (max-width: 1260px) {
   .header_firm_info {
-
-    flex: 1 1 auto;
+    order: 2;
+    flex: 1 1 80%;
     margin: 0;
-    padding: 0 0 20px 10px;
+    padding: 0;
+    justify-self: flex-end;
     align-self: flex-end;
     justify-content: flex-start;
 
-    li:nth-child(n+2) {
-      display: none;
+    li {
+      width: 200px;
+      margin: 0;
+      
+      &:nth-child(n+2) {
+        display: none;
+      }
     }
+
   }
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
 
   .header_firm_info {
+    flex: 1 1 48%;
+    order: 1;
+
     padding: 0;
   
     li {
-
+      width: auto;
   
       img {
 

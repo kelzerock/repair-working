@@ -55,7 +55,7 @@ const RepairBreak = ({ filter }: any) => {
               </div>
             </div>
             <button
-              className="btn-yellow"
+              className={classNames("btn-yellow", style.break_btn)}
               onClick={(e) => {
                 e.preventDefault();
                 e.stopPropagation();

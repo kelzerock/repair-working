@@ -6,6 +6,10 @@
   position: relative;
   background-color: $main-dgray;
 
+  h2, h4 {
+    margin: 16px 0;
+  }
+
   .wrapper {
     height: 100%;
     max-width: 1280px;
@@ -34,6 +38,7 @@
         left: -20px;
       }
 
+
     }
 
 
@@ -41,6 +46,10 @@
       color: $main-white;
       height: 80%;
       align-self: center;
+
+      .info_phone {
+        width: 190px;
+      }
 
       button {
         margin: 0;
@@ -54,6 +63,7 @@
   .block {
     .wrapper {
       position: relative;
+
       .block_img {
         position: absolute;
         top: 70px;
@@ -69,13 +79,15 @@
   .block {
     .wrapper {
 
-      .block_img {
+      .block_img {}
 
-      }
       .block_info {
-        h2, h4 {
+
+        h2,
+        h4 {
           margin: 10px 0;
         }
+
         .info_phone {
 
           width: 190px;

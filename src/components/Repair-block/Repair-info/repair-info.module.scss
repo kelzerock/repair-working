@@ -20,8 +20,7 @@
     padding: 24px 24px 24px 32px;
     max-width: 1000px;
     border-radius: 0 40px 40px 0;
-    background: rgb(13, 88, 158);
-    background: linear-gradient(0deg, rgb(18, 64, 107) 0%, rgb(21, 84, 161) 100%);
+    background: linear-gradient(180deg, #034fa7 0%, #2364af 100%);
 
     h4 {
       font-size: 1.3rem;
@@ -36,7 +35,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: $display-mobile) {
 
   .repair_info {
     padding: 10px 0;
@@ -45,11 +44,11 @@
       padding: 0 24px;
 
       .title {
-        font-size: 1.5rem;
+        font-size: 14px;
       }
 
       .info {
-        font-size: .9rem;
+        font-size: 14px;
       }
     }
 

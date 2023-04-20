@@ -14,11 +14,11 @@ const WasherPage = () => {
     <>
       <RepairTitle data={textData["title-block"].washer} />
       <Benefits />
+      <RepairBreak filter={textBreak.washer.header} />
       <RepairCalculating />
       <RepairInfo />
       <RepairPrice data={textDataPrice.washer.data}/>
       <Reviews />
-      <RepairBreak filter={textBreak.washer.header} />
     </>
   );
 };
