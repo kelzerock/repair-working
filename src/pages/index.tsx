@@ -3,16 +3,21 @@ import Image from "next/image";
 import style from "./index.module.scss";
 import textInfo from "../constants/json/main-page-first-section.json";
 import iconArrowRight from "../../public/images/services/icon_arrow_right.svg";
+import iconSpoiler from '../../public/images/services/icon_spoiler_blue.svg';
 import textServices from "../constants/json/services.json";
 import { Benefits } from "@/components/benefits";
 import { Reviews } from "@/components/reviews";
 import { Workflow } from "@/components/workflow";
 import { Discount } from "@/components/discount";
 import Link from "next/link";
-import Advertise from "@/components/advertise/advertise.component";
-import { FAQ } from "@/components/faq";
+import { useCheckSizeView } from "@/hooks/check-size-view";
+import { useState } from "react";
 
 const MainPage = () => {
+  const isMobile = useCheckSizeView('(max-width: 650px)');
+  const [isHidden, setIsHidden] = useState(true);
+  const iconSize = isMobile ? 22 : 32;
+
   return (
     <div className={style.section}>
       <div className={classNames(style.wrapper, "container")}>
@@ -24,9 +29,11 @@ const MainPage = () => {
             <Link
               key={`button-list-${ind}`}
               href={el.link}
-              className={style.section__btn}
+              className={classNames(style.section__btn, {
+                [style.section__btn_hidden]: ind === textServices.services[0].list.length - 1 && isMobile && isHidden
+              })}
             >
-              <Image src={el.image} alt={el.name} width={32} height={32} />
+              <Image src={el.image} alt={el.name} width={iconSize} height={iconSize} />
               <span>{el.name}</span>
               <Image
                 src={iconArrowRight}
@@ -36,6 +43,15 @@ const MainPage = () => {
               />
             </Link>
           ))}
+          {isMobile &&
+            <button
+              className={classNames(style.section__btn, style.section__btn_spoiler)}
+              onClick={() => setIsHidden(!isHidden)}
+            >
+              <span>Вся техника</span>
+              <Image src={iconSpoiler} alt='spoiler' className={classNames({'rotate': !isHidden})} width={12} height={6}/>
+            </button>
+          }
         </div>
       </div>
       <Benefits />
