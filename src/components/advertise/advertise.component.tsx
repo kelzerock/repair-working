@@ -39,7 +39,7 @@ const Advertise = () => {
           <h2>Звоните прямо сейчас</h2>
           <h4>Ответим на все вопросы по телефонам</h4>
           <h4 className={style.info_phone}>
-            {aboutFirm.phoneImg[0]}<br> {aboutFirm.phoneImg[1]}
+            {aboutFirm.phoneImg[0]}<br /> {aboutFirm.phoneImg[1]}
           </h4>
           <button
             className="btn-yellow"
