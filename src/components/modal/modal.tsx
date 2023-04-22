@@ -98,7 +98,7 @@ export const Modal = ({
 	const [isSuccess, setIsSuccess] = useState(false);
 	const [isError, setIsError] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
-	const { unlockScroll } = useScrollLock();
+	const { lockScroll, unlockScroll } = useScrollLock();
 	
 	const onSubmit: SubmitHandler<FormType> = async (data) => {
 		setIsLoading(true);
@@ -131,6 +131,14 @@ export const Modal = ({
 
 		return () => document.body.removeEventListener('click', closeModal);
 	}, [isShowingModal, setIsShowingModal, closeHandler]);
+
+	useEffect(() => {
+		if (isShowingModal) {
+			lockScroll();
+		} else {
+			unlockScroll();
+		}
+	}, [isShowingModal, lockScroll, unlockScroll]);
 
 	return (
 		<div className={style.section}>
