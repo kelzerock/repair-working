@@ -181,7 +181,7 @@ export const Modal = ({
                                 placeholder='Фамилия и имя'
 								{...register('name', {
 									required: {value: true, message: 'Поле не может быть пустым'},
-									pattern: {value: /^[А-Яа-я]+$/i, message: 'Используйте кириллицу'}
+									pattern: {value: /^[а-яА-Я\s]*$/i, message: 'Используйте кириллицу'}
 								})}
                             />
                             <span className={style.placeholder}>Фамилия и имя</span>
@@ -201,7 +201,7 @@ export const Modal = ({
                                     placeholder='Адрес'
 									{...register('address', {
 										required: {value: true, message: 'Поле не может быть пустым'},
-										pattern: {value: /^[А-Яа-я]+$/i, message: 'Используйте кириллицу'}
+										pattern: {value: /[^a-zA-z]/, message: 'Используйте кириллицу'}
 									})}
 								/>
                                 <span className={style.placeholder}>Адрес</span>
