@@ -55,10 +55,24 @@
             margin: 0 auto 0 10px;
         }
     }
-
+    .section__btn_hidden {
+        display: none;
+    }
     .section__btn:hover {
         color: #003674;
         box-shadow: 0 8px 24px rgba(35, 100, 175, 0.4);
+    }
+    .section__btn_spoiler {
+        box-shadow: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            margin: 0 10px 0 0;
+        }
+    }
+    .section__btn_spoiler:hover {
+        box-shadow: none;
     }
 }
 

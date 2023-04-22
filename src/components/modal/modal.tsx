@@ -98,7 +98,7 @@ export const Modal = ({
 	const [isSuccess, setIsSuccess] = useState(false);
 	const [isError, setIsError] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
-	const { unlockScroll } = useScrollLock();
+	const { lockScroll, unlockScroll } = useScrollLock();
 	
 	const onSubmit: SubmitHandler<FormType> = async (data) => {
 		setIsLoading(true);
@@ -131,6 +131,14 @@ export const Modal = ({
 
 		return () => document.body.removeEventListener('click', closeModal);
 	}, [isShowingModal, setIsShowingModal, closeHandler]);
+
+	useEffect(() => {
+		if (isShowingModal) {
+			lockScroll();
+		} else {
+			unlockScroll();
+		}
+	}, [isShowingModal, lockScroll, unlockScroll]);
 
 	return (
 		<div className={style.section}>
@@ -181,7 +189,7 @@ export const Modal = ({
                                 placeholder='Фамилия и имя'
 								{...register('name', {
 									required: {value: true, message: 'Поле не может быть пустым'},
-									pattern: {value: /^[А-Яа-я]+$/i, message: 'Используйте кириллицу'}
+									pattern: {value: /^[а-яА-Я\s]*$/i, message: 'Используйте кириллицу'}
 								})}
                             />
                             <span className={style.placeholder}>Фамилия и имя</span>
@@ -201,7 +209,7 @@ export const Modal = ({
                                     placeholder='Адрес'
 									{...register('address', {
 										required: {value: true, message: 'Поле не может быть пустым'},
-										pattern: {value: /^[А-Яа-я]+$/i, message: 'Используйте кириллицу'}
+										pattern: {value: /[^a-zA-z]/, message: 'Используйте кириллицу'}
 									})}
 								/>
                                 <span className={style.placeholder}>Адрес</span>
