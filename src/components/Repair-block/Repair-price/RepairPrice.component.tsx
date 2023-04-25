@@ -1,7 +1,6 @@
 import { Fragment, useState } from "react";
 import Image from "next/image";
 import style from "./repairPrice.module.scss";
-import iconSpoiler from "../../../../public/images/services/icon_spoiler_blue.svg";
 import classNames from "classnames";
 
 interface InfoPosition {
@@ -19,7 +18,6 @@ export interface TextDataPrice {
 }
 
 const RepairPrice = ({ data }: TextDataPrice) => {
-
   const [isData, setIsData] = useState([
     { id: 0, check: false },
     { id: 1, check: true },
@@ -54,7 +52,7 @@ const RepairPrice = ({ data }: TextDataPrice) => {
               <h2 className={style.title}>{elem.title}</h2>
               <span>
                 <Image
-                  src={iconSpoiler}
+                  src="/images/services/icon_spoiler_blue.svg"
                   alt="spoiler"
                   className={classNames({ rotate: !isData[index].check })}
                 />
@@ -74,11 +72,12 @@ const RepairPrice = ({ data }: TextDataPrice) => {
             </ul>
           </Fragment>
         ))}
-
       </div>
-        <p className={style.about_price}>Цены действительны c 01.04.2023 по
-31.12.2023гг. Стоимость работ приведена справочно, точную
-стоимость ремонтных работ мастер определяет после диагностики</p>
+      <p className={style.about_price}>
+        Цены действительны c 01.04.2023 по 31.12.2023гг. Стоимость работ
+        приведена справочно, точную стоимость ремонтных работ мастер определяет
+        после диагностики
+      </p>
     </>
   );
 };

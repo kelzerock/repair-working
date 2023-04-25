@@ -2,7 +2,6 @@ import classNames from 'classnames';
 import { useState } from 'react';
 import Image from 'next/image';
 import style from './benefits.module.scss';
-import iconSpoiler from '../../../public/images/services/icon_spoiler_blue.svg';
 import textBenefits from '../../constants/json/benefits.json';
 
 export const Benefits = () => {
@@ -16,7 +15,8 @@ export const Benefits = () => {
                 role='presentation'
             >
                 <h2 className={style.title}>Преимущества для Вас</h2>
-                <span><Image src={iconSpoiler} alt='spoiler' className={classNames({'rotate': !isShowing})}/></span>
+                <span><Image src="/images/services/icon_spoiler_blue.svg" alt='spoiler'
+                className={classNames({'rotate': !isShowing})}/></span>
             </div>
             <ul
                 className={classNames(style.list_ul, {[style.list_hidden] : isShowing})}
