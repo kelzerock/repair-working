@@ -3,6 +3,7 @@ import style from './faq.module.scss';
 import { useState } from 'react';
 import textFAQ from '../../constants/json/faq.json';
 import textFooter from '../../constants/json/footer-contacts.json';
+import textDataAboutFirm from '@/constants/json/about-firm.json'
 import iconSpoiler from '../../../public/images/services/icon_spoiler_blue.svg';
 import Image from 'next/image';
 
@@ -132,7 +133,7 @@ export const FAQ = () => {
                         className={classNames(style.list_ul, {[style.list_hidden] : showSpoiler[sixthSection]})}
                     >
                         <p>{textFAQ.contacts.firstStep}</p>
-                        {textFooter.contacts.phone.map((el, ind) => <a href={`tel:${el}`} key={ind}>{el}</a>)}
+                        {textDataAboutFirm.phoneImg.map((el, ind) => <a href={`tel:${el}`} key={ind}>{el}</a>)}
                         <p>{textFAQ.contacts.secondStep}</p>
                     </ul>
                 </div>

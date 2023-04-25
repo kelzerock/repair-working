@@ -5,6 +5,7 @@ import timeIcon from '../../assets/svg/clock-icon.svg';
 import phoneIcon from '../../assets/svg/ringing-phone-outline-icon.svg';
 import emailIcon from '../../assets/svg/email-icon.svg';
 import locationIcon from '../../assets/svg/map-pin-point-icon.svg';
+import textDataAboutFirm from '@/constants/json/about-firm.json'
 import { Services } from './services';
 import textAboutFirm from '@/constants/json/about-firm.json'
 
@@ -47,6 +48,7 @@ export const Footer = () => (
             <div className={style.secondblock}>
                 <div className={style.customer}>
                     <p>{textInfo.customer}</p>
+                    <p>{`${textDataAboutFirm.officialName}  ${textDataAboutFirm.UNP}`}</p>
                 </div>
                 <Services />
             </div>
