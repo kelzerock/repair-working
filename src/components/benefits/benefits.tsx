@@ -15,8 +15,14 @@ export const Benefits = () => {
                 role='presentation'
             >
                 <h2 className={style.title}>Преимущества для Вас</h2>
-                <span><Image src="/images/services/icon_spoiler_blue.svg" alt='spoiler'
-                className={classNames({'rotate': !isShowing})}/></span>
+                <span>
+                    <Image
+                        src="/images/services/icon_spoiler_blue.svg" alt='spoiler'
+                        width={12}
+                        height={7}
+                        className={classNames({'rotate': !isShowing})}
+                    />
+                </span>
             </div>
             <ul
                 className={classNames(style.list_ul, {[style.list_hidden] : isShowing})}

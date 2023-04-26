@@ -34,19 +34,19 @@
         {
             "name": "Ремонт",
             "list": [
-                {"name": "Стиральные машины", "link": "/repair/washer"},
-                {"name": "Посудомоечные машины", "link": "/repair/dishwasher"},
-                {"name": "Варочные панели", "link": "/repair/hob"},
-                {"name": "Электроплиты", "link": "/repair/stove"},
-                {"name": "Духовые шкафы", "link": "/repair/oven"},
-                {"name": "Сушильные машины", "link": "/repair/dryer"}
+                {"name": "Стиральные машины", "link": "/repair-washer"},
+                {"name": "Посудомоечные машины", "link": "/repair-dishwasher"},
+                {"name": "Варочные панели", "link": "/repair-hob"},
+                {"name": "Электроплиты", "link": "/repair-stove"},
+                {"name": "Духовые шкафы", "link": "/repair-oven"},
+                {"name": "Сушильные машины", "link": "/repair-dryer"}
             ]
         },
         {
             "name": "Установка",
             "list": [
-                {"name": "Стиральные машины", "link": "/installation/washer"},
-                {"name": "Посудомоечные машины", "link": "/installation/dishwasher"}
+                {"name": "Стиральные машины", "link": "/install-washer"},
+                {"name": "Посудомоечные машины", "link": "/install-dishwasher"}
             ]
         },
         {

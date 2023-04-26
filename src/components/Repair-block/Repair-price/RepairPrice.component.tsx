@@ -53,6 +53,8 @@ const RepairPrice = ({ data }: TextDataPrice) => {
               <span>
                 <Image
                   src="/images/services/icon_spoiler_blue.svg"
+                  width={12}
+                  height={7}
                   alt="spoiler"
                   className={classNames({ rotate: !isData[index].check })}
                 />

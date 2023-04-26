@@ -6,37 +6,37 @@
                 {
                     "name": "Стиральные машины",
                     "image": "images/services/icon_washer.svg",
-                    "link": "/repair/washer",
+                    "link": "/repair-washer",
                     "filterName": "washer"
                 },
                 {
                     "name": "Посудомоечные машины",
                     "image": "images/services/icon_dishwasher.svg",
-                    "link": "/repair/dishwasher",
+                    "link": "/repair-dishwasher",
                     "filterName": "dishwasher"
                 },
                 {
                     "name": "Варочные панели",
                     "image": "images/services/icon_cook.svg",
-                    "link": "/repair/hob",
+                    "link": "/repair-hob",
                     "filterName": "hob"
                 },
                 {
                     "name": "Электроплиты",
                     "image": "images/services/icon_electric_cook.svg",
-                    "link": "/repair/stove",
+                    "link": "/repair-stove",
                     "filterName": "stove"
                 },
                 {
                     "name": "Духовые шкафы",
                     "image": "images/services/icon_cooker.svg",
-                    "link": "/repair/oven",
+                    "link": "/repair-oven",
                     "filterName": "oven"
                 },
                 {
                     "name": "Сушильные машины",
                     "image": "images/services/icon_dry_machine.svg",
-                    "link": "/repair/dryer",
+                    "link": "/repair-dryer",
                     "filterName": "dryer"
                 }
             ]
@@ -47,13 +47,13 @@
                 {
                     "name": "Стиральные машины",
                     "image": "",
-                    "link": "/washer",
+                    "link": "/install-washer",
                     "filterName": ""
                 },
                 {
                     "name": "Посудомоечные машины",
                     "image": "",
-                    "link": "/dishwasher",
+                    "link": "/install-dishwasher",
                     "filterName": ""
                 }
             ]
