@@ -51,7 +51,7 @@
         }
         .list_li::after {
             content: "";
-            background-image: url('../../../public/images/workflow/icon_arrow_right_black.svg');
+            background-image: url('/images/workflow/icon_arrow_right_black.svg');
             position: absolute;
             right: 0;
             transform: translateY(100%);
