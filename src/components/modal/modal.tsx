@@ -199,7 +199,7 @@ export const Modal = ({
 								</span>
 							}
                         </label>
-                        {(isRequest || isWarranty) && (
+                        {/* {(isRequest || isWarranty) && (
                             <label className={style.label}>
                                 <input
                                     className={classNames(
@@ -219,7 +219,7 @@ export const Modal = ({
 									</span>
 								}
                             </label>
-                        )}
+                        )} */}
                         {(isRequest || isWarranty || isCall) &&
 							<Controller
 								control={control}

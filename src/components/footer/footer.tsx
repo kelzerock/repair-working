@@ -13,7 +13,7 @@ export const Footer = () => (
     <footer className={style.footer}>
         <div className='container'>
             <div className={style.firstblock}>
-                <div className={style.social}>
+                {/* <div className={style.social}>
                     <ul>
                         {textInfo.social.map((el, ind) => 
                             <li key={ind}>
@@ -23,7 +23,7 @@ export const Footer = () => (
                             </li>
                         )}
                     </ul>
-                </div>
+                </div> */}
                 <div className={style.contacts}>
                     <div className={style.contacts_container}>
                         <Image src={timeIcon} alt='work time' height={24} width={24} className={style.icon}/>
