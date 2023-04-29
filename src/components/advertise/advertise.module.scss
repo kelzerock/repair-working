@@ -6,7 +6,8 @@
   position: relative;
   background-color: $main-dgray;
 
-  h2, h4 {
+  h2,
+  h4 {
     margin: 16px 0;
   }
 
@@ -37,8 +38,6 @@
         width: auto;
         left: -20px;
       }
-
-
     }
 
 
@@ -46,9 +45,19 @@
       color: $main-white;
       height: 80%;
       align-self: center;
+      z-index: 1;
 
       .info_phone {
         width: 190px;
+
+        a {
+          text-decoration: none;
+          color: $main-white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
 
       button {
