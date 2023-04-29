@@ -2,45 +2,45 @@
   "path": [
     {
       "namePage": "Ремонт",
-      "link": "/repair",
+      "link": "/repair-",
       "subelements": [
         {
           "name": "Стиральные машины",
-          "subLink": "/washer"
+          "subLink": "washer"
         },
         {
           "name": "Посудомоечные машины",
-          "subLink": "/dishwasher"
+          "subLink": "dishwasher"
         },
         {
           "name": "Варочные панели",
-          "subLink": "/hob"
+          "subLink": "hob"
         },
         {
           "name": "Электроплиты",
-          "subLink": "/stove"
+          "subLink": "stove"
         },
         {
           "name": "Духовные шкафы",
-          "subLink": "/oven"
+          "subLink": "oven"
         },
         {
           "name": "Сушильные машины",
-          "subLink": "/dryer"
+          "subLink": "dryer"
         }
       ]
     },
     {
-      "link": "/installation",
+      "link": "/install-",
       "namePage": "Установка",
       "subelements": [
         {
           "name": "Стиральные машины",
-          "subLink": "/washer"
+          "subLink": "washer"
         },
         {
           "name": "Посудомоечные машины",
-          "subLink": "/dishwasher"
+          "subLink": "dishwasher"
         }
       ]
     },

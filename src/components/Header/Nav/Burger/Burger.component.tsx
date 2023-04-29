@@ -51,7 +51,6 @@ const Burger = () => {
                       onClick={() => {
                         let newData = showSpoiler.map((element, i) => {
                           if (i === index) {
-                            console.log("test");
                             return !element;
                           } else {
                             return element;
@@ -60,12 +59,19 @@ const Burger = () => {
                         setShowSpoiler(newData);
                       }}
                     >
-                      <span className={style.sub_header}>{el.namePage}
-                      
-                      <Image className={classNames(
-                        style.img, 
-                        !showSpoiler[index] ? style.rotateImg : ""
-                        )} src="/images/header/small-arrow-black.svg" alt="arrow" width={10} height={10} />
+                      <span className={style.sub_header}>
+                        {el.namePage}
+
+                        <Image
+                          className={classNames(
+                            style.img,
+                            !showSpoiler[index] ? style.rotateImg : ""
+                          )}
+                          src="/images/header/small-arrow-black.svg"
+                          alt="arrow"
+                          width={10}
+                          height={10}
+                        />
                       </span>
                       <ul
                         className={classNames(
