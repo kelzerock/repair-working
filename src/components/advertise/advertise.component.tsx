@@ -39,7 +39,13 @@ const Advertise = () => {
           <h2>Звоните прямо сейчас</h2>
           <h4>Ответим на все вопросы по телефонам</h4>
           <h4 className={style.info_phone}>
-            {aboutFirm.phoneImg[0]}<br /> {aboutFirm.phoneImg[1]}
+            <a href={`tel:${aboutFirm.phone[0]}`}>
+              {aboutFirm.phoneImg[0]}
+            </a>
+            <br /> 
+            <a href={`tel:${aboutFirm.phone[1]}`}>
+              {aboutFirm.phoneImg[1]}
+            </a>
           </h4>
           <button
             className="btn-yellow"
