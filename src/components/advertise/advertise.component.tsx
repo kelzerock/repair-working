@@ -13,7 +13,7 @@ const Advertise = () => {
         <Modal
           isShowingModal={isShowingModal}
           setIsShowingModal={setIsShowingModal}
-          typeOfModal="request"
+          typeOfModal="call"
         />
       )}
       <div className={style.wrapper}>

@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import { useState } from "react";
-import Button from "../Button/Button.component";
 import { Modal } from "../modal";
 import FirmInfo from "./FirmInfo/FirmInfo.component";
 import style from "./header.module.scss";

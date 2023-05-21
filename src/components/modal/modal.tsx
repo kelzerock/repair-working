@@ -30,21 +30,6 @@ export type ModalPropsType = {
   typeOfModal: "warranty" | "review" | "request" | "call";
 };
 
-// export const useScrollLock = () => {
-//     const lockScroll = useCallback(() => {
-//         document.body.style.overflow = 'hidden';
-//     }, [])
-
-//     const unlockScroll = useCallback(() => {
-//         document.body.style.overflow = '';
-//     }, []);
-
-//     return {
-//         lockScroll,
-//         unlockScroll
-//     };
-// }
-
 export const useTypeOfModal = (type: string) => {
   switch (true) {
     case type === "review":
@@ -120,7 +105,7 @@ export const Modal = ({
     unlockScroll();
   }, [setIsShowingModal, unlockScroll]);
 
-  ////
+  //// functional for bitrix
 
   async function sendDataToBitrix(method: any, data?: any) {
     const requestOptions = {
