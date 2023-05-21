@@ -40,6 +40,10 @@
       cursor: pointer;
     }
   }
+
+  .public_contract {
+    width: 250px;
+  }
 }
 
 @media screen and (max-width: $display-laptop) {

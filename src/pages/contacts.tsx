@@ -49,6 +49,11 @@ const ContactPage = () => {
         E-mail:
         <a href={`mailto: ${infoAboutFirm.email}`}> {infoAboutFirm.email}</a>
       </p>
+      <div className={style.public_contract}>
+        <a href="/files/public_contract.docx" download="">
+          <p>Наш публичный договор.</p>
+        </a>
+      </div>
     </div>
   );
 };
