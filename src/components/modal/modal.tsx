@@ -114,7 +114,7 @@ export const Modal = ({
       body: JSON.stringify(data),
     };
     let response = await fetch(
-      `https://b24-nlcbc1.bitrix24.by/rest/1/kc94i4diu7qqa0d4/${method}`,
+      `https://r-teh.bitrix24.by/rest/14/ide5fauc0w6sizps/${method}`,
       requestOptions
     );
     if (response.ok) {
