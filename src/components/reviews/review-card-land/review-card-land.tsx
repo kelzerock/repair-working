@@ -18,7 +18,7 @@ export const ReviewCardLand = ({
     date    
 }: ReviewCardType) => {
 
-    const scoreStars = Array(score).fill(<Image src={iconStar} alt='star'/>);
+    const scoreStars = Array.from(Array(score), (_, i) =><Image src={iconStar} alt='star' key={i}/>)
 
     return (
         <div className={style.wrapper}>
