@@ -140,6 +140,9 @@ export const Modal = ({
         STAGE_ID: "NEW",
         CONTACT_ID: contact_id,
         COMMENTS: data.message,
+        SOURCE_ID: "WEB",
+        SOURCE_DESCRIPTION: `Заявка с сайта (${titleInfo})`,
+        UTM_SOURCE: "r-teh.by",
       },
       params: { REGISTER_SONET_EVENT: "Y" },
     });
