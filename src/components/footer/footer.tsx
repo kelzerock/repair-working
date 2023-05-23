@@ -73,6 +73,13 @@ export const Footer = () => (
         <div className={style.customer}>
           <p>{textInfo.customer}</p>
           <p>{`${textDataAboutFirm.officialName}  ${textDataAboutFirm.UNP}`}</p>
+          <a
+            href="/files/public_contract.docx"
+            download=""
+            
+          >
+            <p className={style.public_contract}>Публичный договор.</p>
+          </a>
         </div>
         <Services />
       </div>

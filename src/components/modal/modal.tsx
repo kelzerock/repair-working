@@ -16,6 +16,7 @@ import Image from "next/image";
 import MaskedInput from "react-text-mask";
 import { useScrollLock } from "@/hooks/scroll-lock";
 import { PhoneMasks } from "@/constant/regex";
+import { data } from "autoprefixer";
 
 export type FormType = {
   name: string | undefined;
@@ -107,7 +108,7 @@ export const Modal = ({
 
   //// functional for bitrix
 
-  async function sendDataToBitrix(method: any, data?: any) {
+  async function sendDataToBitrix(method: string, data?: any) {
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },

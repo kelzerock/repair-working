@@ -64,6 +64,14 @@
         padding: 20px 0;
         .customer {
             width: 25%;
+
+            .public_contract {
+                text-decoration: underline;
+                
+                &:hover {
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
