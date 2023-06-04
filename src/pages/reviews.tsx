@@ -9,7 +9,6 @@ import iconSpoiler from '../../public/images/services/icon_spoiler_blue.svg';
 import classNames from 'classnames';
 import { ReviewCardLand } from '@/components/reviews/review-card-land';
 import { Modal } from '@/components/modal';
-import Head from 'next/head';
 
 const ReviewPage = () => {
 	const [isShowing, setIsShowing] = useState(false);
@@ -17,11 +16,6 @@ const ReviewPage = () => {
 
 	return (
 		<>
-			<Head>
-				<title>
-					Отзывы на услуги сервис-центра РемТехСервис
-				</title>
-			</Head>
 			<div className={classNames(style.section, 'container')}>
 				{isShowingModal && <Modal isShowingModal={isShowingModal} setIsShowingModal={setIsShowingModal} typeOfModal='review'/>}
 				<div className={style.crumbs_wrapper}>

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import style from "./repair-title.module.scss";
 import Image from "next/image";
 
@@ -15,11 +14,6 @@ const RepairTitle = ({ data }: TitleBlockInterface) => {
   const { title, info, image, imageAlt } = data;
   return (
     <>
-      <Head>
-        <title>
-          {title}
-        </title>
-      </Head>
       <div className={style.title}>
         <h2>{title}</h2>
         <div className={style.info}>
