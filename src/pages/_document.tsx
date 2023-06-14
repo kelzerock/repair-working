@@ -9,7 +9,7 @@ export default function Document() {
           name="keywords"
           content="ремтехсервис ремонт техники, ремонт стиральные машины, ремонт посудомоечные машины, ремонт варочные панели, ремонт электроплиты, ремонт духовные шкафы,ремонт сушильные машины, УНП 193683932, ООО Кронс Компани"
         />
-
+        <meta name="yandex-verification" content="ee041239ea02b823" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
