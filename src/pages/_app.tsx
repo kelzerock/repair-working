@@ -1,7 +1,6 @@
 import Layout from "@/components/Layout/Layout";
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
-import Head from "next/head";
 import { useEffect } from 'react';
 import TagManager from 'react-gtm-module';
 
