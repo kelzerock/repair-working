@@ -1,14 +1,10 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
+
   return (
     <Html lang="ru">
       <Head key="head-main">
-        <title>РемТехСервис</title>
-        <meta
-          name="keywords"
-          content="ремтехсервис ремонт техники, ремонт стиральные машины, ремонт посудомоечные машины, ремонт варочные панели, ремонт электроплиты, ремонт духовные шкафы,ремонт сушильные машины, УНП 193683932, ООО Кронс Компани"
-        />
         <meta name="yandex-verification" content="ee041239ea02b823" />
         <link
           rel="apple-touch-icon"

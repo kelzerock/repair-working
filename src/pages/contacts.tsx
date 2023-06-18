@@ -1,6 +1,5 @@
 import style from "./contacts.module.scss";
 import infoAboutFirm from "@/constants/json/about-firm.json";
-import Link from "next/link";
 import { useState } from "react";
 import { Modal } from "@/components/modal";
 

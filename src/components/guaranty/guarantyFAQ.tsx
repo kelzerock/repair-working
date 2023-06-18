@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import style from "./guarantyFAQ.module.scss";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import textFAQ from "@/constants/json/guarantyFAQ.json";
 import iconSpoiler from "/images/services/icon_spoiler_blue.svg";
 import Image from "next/image";
@@ -25,7 +25,7 @@ export const GuarantyFAQ = () => {
       <h2 className={style.title}>Ответы на часто задаваемые вопросы</h2>
       <div className={style.wrapper}>
         {textFAQ.map((element, index: number) => (
-          <>
+          <Fragment key={index}>
             <div className={style.content}>
               <div
                 className={style.list_header}
@@ -61,7 +61,7 @@ export const GuarantyFAQ = () => {
                 </li>
               </ol>
             </div>
-          </>
+          </Fragment>
         ))}
       </div>
     </div>
