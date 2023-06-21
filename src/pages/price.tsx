@@ -19,7 +19,7 @@ const PricePage = () => {
 
   return (
     <div className={style.container_price}>
-      <h2>СТОИМОСТЬ УСЛУГ ПО РЕМОНТУ</h2>
+      <h1>СТОИМОСТЬ УСЛУГ ПО РЕМОНТУ</h1>
       <div className={style.section__services}>
         {textServices.services[0].list.map((el, ind) => (
           <div

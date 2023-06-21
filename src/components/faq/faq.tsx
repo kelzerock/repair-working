@@ -2,7 +2,6 @@ import classNames from 'classnames';
 import style from './faq.module.scss';
 import { useState } from 'react';
 import textFAQ from '../../constants/json/faq.json';
-import textFooter from '../../constants/json/footer-contacts.json';
 import textDataAboutFirm from '@/constants/json/about-firm.json'
 import iconSpoiler from '../../../public/images/services/icon_spoiler_blue.svg';
 import Image from 'next/image';
@@ -19,7 +18,7 @@ export const FAQ = () => {
 
     return (
         <div className={classNames(style.section, 'container')}>
-            <h2 className={style.title}>Ответы на часто задаваемые вопросы</h2>
+            <h1 style={{textTransform: "uppercase"}}>Ответы на часто задаваемые вопросы</h1>
             <div className={style.wrapper}>
                 <div className={style.content}>
                     <div

@@ -22,7 +22,7 @@ const MainPage = () => {
   return (
     <div className={style.section}>
       <div className={classNames(style.wrapper, "container")}>
-        <h2 className={style.section__header}>{textInfo.header}</h2>
+        <h1 className={style.section__header}>{textInfo.header}</h1>
         <h5 className={style.section__title}>{textInfo.title}</h5>
         <p className={style.section__description}>{textInfo.description}</p>
         <div className={style.section__services}>

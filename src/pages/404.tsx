@@ -13,6 +13,7 @@ const ErrorPage = () => {
         sizes="100vw"
         className={style.img}
       />
+      <h1 style={{display: "none"}}>Страница 404</h1>
       <p>
         Вы попали на страницу, которой не существует, либо зашли по неверному
         адресу.
