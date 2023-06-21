@@ -3,7 +3,7 @@
 .title {
   padding: 20px;
 
-  h2 {
+  h1 {
     font-size: 2rem;
   }
 
@@ -14,6 +14,17 @@
     margin: 0;
     max-width: 1000px;
     line-height: 1.5rem;
+  }
+
+  .infoImg {
+    display: flex;
+    column-gap: 10px;
+    max-width: 1000px;
+
+    img {
+      height: 200px;
+      width: auto;
+    }
   }
 
   .click_form {
@@ -35,13 +46,22 @@
       display: flex;
       column-gap: 10px;
     }
+
+    .infoImg {
+      display: flex;
+      column-gap: 10px;
+  
+      img {
+        display: none;
+      }
+    }
   }
 
 }
 
 @media screen and (max-width: $display-mobile) {
   .title {
-    h2 {
+    h1 {
       font-size: 1.5rem;
     }
   

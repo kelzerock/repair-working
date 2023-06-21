@@ -15,7 +15,7 @@ const RepairTitle = ({ data }: TitleBlockInterface) => {
   return (
     <>
       <div className={style.title}>
-        <h2>{title}</h2>
+        <h1>{title}</h1>
         <div className={style.info}>
           <Image src={image} alt={imageAlt} width="0" height="0" sizes="100vw"/>
           <p>{info}</p>
